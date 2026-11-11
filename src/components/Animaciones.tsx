@@ -5,17 +5,24 @@ import { useEffect } from "react";
 // Elementos que aparecen al hacer scroll
 const selectores = [".sh", ".pj", ".more li", ".tools li", ".ai-card", ".prose", ".nums", ".stack > div", ".country", ".exp li", ".extra", ".ck", ".github", ".contact .wrap > *"];
 
-// Cuenta desde 0 hasta el número final
+// Cuenta desde 0 hasta el número final, pasando por todos los números
 function contar(el: HTMLElement) {
   const final = Number(el.dataset.contar);
-  const duracion = 1400;
+  // los números pequeños van más despacio para que se vea cada paso
+  const duracion = final <= 10 ? 1800 : 1500;
   const inicio = performance.now();
+  el.classList.add("contando");
 
   function paso(ahora: number) {
     const progreso = Math.min((ahora - inicio) / duracion, 1);
-    const suave = 1 - Math.pow(1 - progreso, 3); // empieza rápido y frena al final
-    el.textContent = String(Math.round(final * suave));
-    if (progreso < 1) requestAnimationFrame(paso);
+    const suave = final <= 10 ? progreso : 1 - Math.pow(1 - progreso, 3);
+    el.textContent = String(Math.floor(final * suave));
+    if (progreso < 1) {
+      requestAnimationFrame(paso);
+    } else {
+      el.textContent = String(final);
+      el.classList.remove("contando");
+    }
   }
   requestAnimationFrame(paso);
 }

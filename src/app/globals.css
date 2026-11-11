@@ -1079,8 +1079,8 @@ section.s {
 .contact h2 {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
-  line-height: 1;
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem); /* igual que los títulos de sección */
+  line-height: 1.06;
   letter-spacing: -0.025em;
 }
 .contact p {

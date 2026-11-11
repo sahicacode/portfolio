@@ -1,0 +1,39 @@
+name: Publicar en Hostinger
+
+# Construye la web (npm run build) y deja la carpeta out/ en la rama "web".
+# Hostinger (Avanzado → GIT) está conectado a esa rama y la publica sola.
+
+on:
+  push:
+    branches: [nuevo-portfolio]
+  workflow_run:
+    workflows: ["Capturas de proyectos"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: nuevo-portfolio
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - name: Subir out/ a la rama web
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: web
+          folder: out

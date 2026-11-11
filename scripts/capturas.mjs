@@ -2,6 +2,7 @@
 // Se ejecuta en GitHub Actions (ver .github/workflows/capturas.yml)
 import { chromium } from 'playwright';
 import sharp from 'sharp';
+import fs from 'node:fs';
 
 const webs = [
   ['sahica', 'https://sahica.com/'],
@@ -20,13 +21,14 @@ const webs = [
   ['harryphotographer', 'https://harryphotographer.sahica.com/'],
 ];
 
+fs.mkdirSync('public/proyectos', { recursive: true });
 const browser = await chromium.launch();
 
 for (const [nombre, url] of webs) {
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, locale: 'es-ES' });
   try {
     await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
-  } catch (e) {
+  } catch {
     console.log('Tarda mucho, hago la captura igualmente:', url);
   }
   // Intento cerrar el aviso de cookies si sale

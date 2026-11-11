@@ -9,11 +9,14 @@ export default function Hero() {
             <i></i>Open to work<span className="largo"> · Front-end roles</span>
           </span>
           <h1>
-            Front-end developer who builds things that <em>pass inspection.</em>
+            Hi, I&apos;m Sara.
+            <br />
+            <em>Front&#8209;end developer.</em>
           </h1>
           <p className="intro">
-            I&apos;m Sara, a web developer from Seville. I build with <b>React, Next.js and TypeScript</b>, and I
-            check my work the way I check <b>Airbus parts</b> as a quality inspector: every detail, before it ships.
+            I&apos;m a <b>web developer</b> from Seville. I build apps with <b>React, Next.js and TypeScript</b>, and my
+            background in IT support and
+            quality control for <b>Airbus</b> means I care about the details, from the code to the last pixel.
           </p>
           <div className="ctas">
             <a className="btn primary" href="#work">

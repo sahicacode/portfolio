@@ -19,7 +19,7 @@ const persona = {
   jobTitle: "Front-End Developer",
   url: "https://portfolio.sahica.com",
   address: { "@type": "PostalAddress", addressLocality: "Seville", addressCountry: "ES" },
-  sameAs: ["https://github.com/sahicacode"],
+  sameAs: ["https://github.com/sahicacode", "https://www.linkedin.com/in/sara-hidalgo-caro/"],
   knowsAbout: ["React", "Next.js", "TypeScript", "JavaScript", "WordPress", "PHP"],
 };
 

@@ -12,7 +12,6 @@ export default function ProjectCard({ proyecto }: { proyecto: Proyecto }) {
       href={proyecto.url}
       target="_blank"
       rel="noopener"
-      aria-label={`${proyecto.nombre} (opens in a new tab)`}
     >
       <div className="stage">
         <div className="win">

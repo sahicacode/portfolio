@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: descripcion,
     url: "https://portfolio.sahica.com",
     siteName: "Sara Hidalgo",
-    images: [{ url: "/og.png", width: 1200, height: 630 }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630 }],
     locale: "en_GB",
     type: "website",
   },

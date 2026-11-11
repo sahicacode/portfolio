@@ -15,6 +15,17 @@
   --sans: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: var(--font-mono), ui-monospace, Menlo, Consolas, monospace;
   color-scheme: dark;
+
+  /* Escala de tamaños: toda la web usa solo estos */
+  --fs-display: clamp(2.6rem, 5.4vw, 4.6rem); /* titular del hero */
+  --fs-h2: clamp(2.1rem, 4.6vw, 3.4rem); /* títulos de sección y números grandes */
+  --fs-h3: 1.5rem; /* nombres de proyecto, subtítulos, email */
+  --fs-h4: 1.125rem; /* títulos pequeños: puestos, herramientas, países */
+  --fs-lead: 1.125rem; /* párrafos destacados */
+  --fs-body: 1rem; /* texto normal */
+  --fs-small: 0.875rem; /* textos secundarios */
+  --fs-mono: 0.8125rem; /* etiquetas en mono */
+  --fs-mono-s: 0.75rem; /* chips y código */
 }
 
 * {
@@ -83,7 +94,7 @@ em {
 
 .mono {
   font-family: var(--mono);
-  font-size: 0.86rem;
+  font-size: var(--fs-mono);
   letter-spacing: 0.02em;
 }
 
@@ -149,7 +160,7 @@ header.top .wrap {
   display: flex;
   gap: 26px;
   align-items: center;
-  font-size: 0.92rem;
+  font-size: var(--fs-small);
   color: var(--muted);
 }
 .navl a:hover {
@@ -234,12 +245,12 @@ header.top .wrap {
 .hero h1 {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: clamp(2.6rem, 5.4vw, 4.6rem);
+  font-size: var(--fs-display);
   line-height: 1.04;
   letter-spacing: -0.025em;
 }
 .intro {
-  font-size: 1.12rem;
+  font-size: var(--fs-lead);
   color: var(--muted);
   max-width: 52ch;
 }
@@ -260,7 +271,7 @@ header.top .wrap {
   padding: 13px 20px;
   border-radius: 999px;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: var(--fs-body);
   border: 1px solid var(--line2);
   transition: transform 0.2s, border-color 0.2s;
 }
@@ -306,7 +317,7 @@ header.top .wrap {
   backdrop-filter: blur(10px);
   border: 1px solid var(--line2);
   box-shadow: 0 24px 50px -16px rgba(0, 0, 0, 0.8);
-  font: 400 0.8rem/1.7 var(--mono);
+  font: 400 var(--fs-mono-s)/1.7 var(--mono);
   animation: float 7s ease-in-out infinite;
 }
 @keyframes float {
@@ -330,7 +341,7 @@ header.top .wrap {
 .code header span {
   margin-left: auto;
   color: var(--dim);
-  font-size: 0.7rem;
+  font-size: var(--fs-mono-s);
 }
 .code pre {
   margin: 0;
@@ -365,8 +376,8 @@ header.top .wrap {
     right: 16px;
     top: auto;
     bottom: 10px;
-    width: 172px;
-    font-size: 0.6rem;
+    width: 196px;
+    font-size: 0.6875rem;
     line-height: 1.6;
   }
   .hello .largo {
@@ -413,7 +424,7 @@ header.top .wrap {
 .track span {
   font-family: var(--titulos);
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: var(--fs-lead);
   color: var(--dim);
   white-space: nowrap;
 }
@@ -430,12 +441,18 @@ header.top .wrap {
 }
 .now b {
   display: block;
-  font-weight: 600;
+  font-family: var(--titulos);
+  font-size: var(--fs-h4);
+  font-weight: 700;
   margin-bottom: 2px;
 }
 .now span {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: var(--fs-small);
+}
+.now .k {
+  font-size: var(--fs-mono);
+  color: var(--dim);
 }
 @media (max-width: 820px) {
   .now .wrap {
@@ -471,7 +488,7 @@ section.s {
 .sh h2 {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  font-size: var(--fs-h2);
   line-height: 1.06;
   letter-spacing: -0.025em;
 }
@@ -482,7 +499,7 @@ section.s {
 .sub {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: var(--fs-h3);
   margin: 64px 0 20px;
 }
 
@@ -546,7 +563,7 @@ section.s {
 }
 .win .tb span {
   margin-left: 10px;
-  font: 400 0.68rem var(--mono);
+  font: 400 var(--fs-mono-s) var(--mono);
   color: rgba(255, 255, 255, 0.5);
   white-space: nowrap;
   overflow: hidden;
@@ -576,13 +593,13 @@ section.s {
 .info h3 {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: 1.9rem;
+  font-size: var(--fs-h3);
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 .info p {
   color: var(--muted);
-  font-size: 0.96rem;
+  font-size: var(--fs-body);
   min-height: 4.8em; /* 3 líneas, para que todas las tarjetas midan igual */
 }
 .go {
@@ -612,7 +629,7 @@ section.s {
   padding-top: 8px;
 }
 .tags span {
-  font: 400 0.74rem var(--mono);
+  font: 400 var(--fs-mono-s) var(--mono);
   padding: 3px 9px;
   border-radius: 999px;
   border: 1px solid var(--line2);
@@ -664,15 +681,16 @@ section.s {
 }
 .more .mono {
   color: var(--dim);
-  font-size: 0.74rem;
+  font-size: var(--fs-mono-s);
 }
 .more b {
   font-family: var(--titulos);
+  font-size: var(--fs-h4);
   font-weight: 700;
 }
 .more p {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: var(--fs-small);
   line-height: 1.45;
 }
 .more small {
@@ -720,11 +738,11 @@ section.s {
 .tools b {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: var(--fs-h4);
 }
 .tools .mono {
   color: var(--blue);
-  font-size: 0.78rem;
+  font-size: var(--fs-mono-s);
 }
 .ai-grid {
   display: grid;
@@ -758,11 +776,11 @@ section.s {
 .ai-card b {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: var(--fs-h4);
 }
 .ai-card p {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: var(--fs-small);
   line-height: 1.5;
 }
 @media (max-width: 900px) {
@@ -793,7 +811,7 @@ section.s {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  font-size: 1.1rem;
+  font-size: var(--fs-lead);
   color: var(--muted);
   max-width: 52ch;
 }
@@ -816,7 +834,7 @@ section.s {
 .nums b {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: 2.6rem;
+  font-size: var(--fs-h2);
   line-height: 1;
   font-variant-numeric: tabular-nums;
   transition: color 0.4s;
@@ -827,7 +845,7 @@ section.s {
 }
 .nums span {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: var(--fs-small);
 }
 .stack {
   display: flex;
@@ -835,7 +853,7 @@ section.s {
   gap: 22px;
 }
 .stack h3 {
-  font: 400 0.84rem var(--mono);
+  font: 400 var(--fs-mono) var(--mono);
   color: var(--dim);
   margin-bottom: 10px;
 }
@@ -851,7 +869,7 @@ section.s {
   padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid var(--line2);
-  font-size: 0.9rem;
+  font-size: var(--fs-small);
   transition: border-color 0.2s, background 0.2s;
 }
 .pills span:hover {
@@ -888,16 +906,16 @@ section.s {
 }
 .country .mono {
   color: var(--blue);
-  font-size: 0.76rem;
+  font-size: var(--fs-mono-s);
 }
 .country b {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: var(--fs-h4);
 }
 .country span:last-child {
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: var(--fs-small);
 }
 @media (max-width: 760px) {
   .countries {
@@ -921,20 +939,22 @@ section.s {
   color: var(--ok);
 }
 .exp b {
-  font-weight: 600;
+  font-family: var(--titulos);
+  font-size: var(--fs-h4);
+  font-weight: 700;
   display: block;
 }
 .exp .org {
   color: var(--muted);
-  font-size: 0.93rem;
+  font-size: var(--fs-small);
 }
 .exp p {
   color: var(--muted);
-  font-size: 0.93rem;
+  font-size: var(--fs-body);
 }
 .area {
   display: inline-block;
-  font: 400 0.7rem var(--mono);
+  font: 400 var(--fs-mono-s) var(--mono);
   padding: 1px 8px;
   border-radius: 999px;
   border: 1px solid var(--line2);
@@ -1028,22 +1048,23 @@ section.s {
 }
 .gauge span {
   position: relative;
-  font: 700 1.4rem var(--titulos);
+  font: 700 var(--fs-h3) var(--titulos);
   color: var(--c);
 }
 .gauge span.ci {
-  font: 700 1rem var(--mono);
+  font: 700 var(--fs-body) var(--mono);
 }
 .gauge.b {
   --c: var(--blue);
 }
 .ck b {
   font-family: var(--titulos);
+  font-size: var(--fs-h4);
   font-weight: 700;
 }
 .ck small {
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: var(--fs-small);
   line-height: 1.45;
 }
 @media (max-width: 900px) {
@@ -1079,14 +1100,14 @@ section.s {
 .contact h2 {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: clamp(2.1rem, 4.6vw, 3.4rem); /* igual que los títulos de sección */
+  font-size: var(--fs-h2); /* igual que los títulos de sección */
   line-height: 1.06;
   letter-spacing: -0.025em;
 }
 .contact p {
   color: var(--muted);
   max-width: 50ch;
-  font-size: 1.08rem;
+  font-size: var(--fs-lead);
 }
 .mailrow {
   display: flex;
@@ -1097,14 +1118,14 @@ section.s {
 .mail {
   font-family: var(--titulos);
   font-weight: 500;
-  font-size: clamp(1.15rem, 3vw, 1.7rem);
+  font-size: var(--fs-h3);
   overflow-wrap: anywhere;
 }
 .mail:hover {
   color: var(--blue);
 }
 .mailrow button {
-  font: 500 0.85rem var(--sans);
+  font: 500 var(--fs-small) var(--sans);
   background: none;
   border: 1px solid var(--line2);
   color: var(--fg);
@@ -1207,7 +1228,7 @@ footer .wrap {
 }
 .nf h1 {
   font-family: var(--titulos);
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-size: var(--fs-h2);
 }
 
 @media (prefers-reduced-motion: reduce) {

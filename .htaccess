@@ -9,6 +9,7 @@ ErrorDocument 404 /404.html
 RewriteRule ^proyectos\.html$ /#work [R=301,NE,L]
 RewriteRule ^aboutme\.html$ /#about [R=301,NE,L]
 RewriteRule ^contacto\.html$ /#contact [R=301,NE,L]
+RewriteRule ^docs/CV-Sara-Hidalgo-Caro\.pdf$ /cv/Sara-Hidalgo-Caro-CV.pdf [R=301,L]
 
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"

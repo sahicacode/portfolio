@@ -98,14 +98,6 @@ export const otrosProyectos: Proyecto[] = [
     tecnologias: ["Next.js", "FastAPI", "OpenAI"],
   },
   {
-    nombre: "TareasApp",
-    url: "https://tareasapp.rf.gd",
-    imagen: "/proyectos/tareasapp.webp",
-    etiqueta: "Web app",
-    descripcion: "Task manager with subtasks, progress bar and login.",
-    tecnologias: ["PHP", "MySQL", "JavaScript"],
-  },
-  {
     nombre: "Codemetry",
     url: "/proyectos/ITConsulting/index.html",
     imagen: "/proyectos/codemetry.webp",

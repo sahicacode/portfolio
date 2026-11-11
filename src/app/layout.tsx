@@ -33,8 +33,8 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={`${textoNormal.variable} ${titulos.variable} ${mono.variable}`}>{children}</body>
+    <html lang="en" className={`${textoNormal.variable} ${titulos.variable} ${mono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

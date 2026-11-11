@@ -118,4 +118,4 @@ export const educacion = [
 
 export const certificados = ["Cisco CCNA 1 & 2", "Cisco Cybersecurity Essentials"];
 
-export const idiomas = ["Spanish · native", "English · intermediate"];
+export const idiomas = ["Spanish (native)", "English (intermediate)"];

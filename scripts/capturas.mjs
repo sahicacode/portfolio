@@ -14,7 +14,6 @@ const webs = [
   ['imageformatx', 'https://imageformatx.vercel.app/'],
   ['novabank', 'https://novabank-prestamos.vercel.app/'],
   ['fakecheckia', 'https://noticiasfalsas.vercel.app/'],
-  ['tareasapp', 'https://tareasapp.rf.gd/'],
   ['pizzeria', 'https://pizzeriademogorgon.sahica.com/'],
   ['djwilly', 'https://djwillyeltuerto.sahica.com/'],
   ['jurassicfilm', 'https://jurassicfilm.sahica.com/'],
@@ -39,7 +38,11 @@ for (const [nombre, url] of webs) {
       break;
     }
   }
-  await page.waitForTimeout(2500);
+  // Bajo y subo para que carguen las imágenes y animaciones (Elementor)
+  await page.mouse.wheel(0, 1500);
+  await page.waitForTimeout(1500);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(5000);
   const png = await page.screenshot();
   await sharp(png).resize(1200).webp({ quality: 78 }).toFile(`public/proyectos/${nombre}.webp`);
   console.log('OK', nombre);

@@ -43,7 +43,7 @@ export const proyectos: Proyecto[] = [
     imagen: "/proyectos/licenciasunavez.webp",
     etiqueta: "Directory · 2026",
     descripcion:
-      "A directory of software you pay for once instead of every month. Each app shows its real price, how long updates last and whether it works without the vendor's server, plus alternatives to popular subscriptions.",
+      "A directory of software you pay for once, not every month. Real prices, how long updates last and alternatives to popular subscriptions.",
     tecnologias: ["Directory", "Filters", "SEO", "Newsletter"],
   },
   {

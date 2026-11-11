@@ -234,7 +234,7 @@ header.top .wrap {
 .hero h1 {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: clamp(2.6rem, 6vw, 5.2rem);
+  font-size: clamp(2.6rem, 5.4vw, 4.6rem);
   line-height: 1.04;
   letter-spacing: -0.025em;
 }
@@ -403,12 +403,14 @@ header.top .wrap {
 }
 
 /* ---------- Ahora ---------- */
+.now {
+  border-bottom: 1px solid var(--line);
+}
 .now .wrap {
   display: grid;
   grid-template-columns: 120px repeat(3, minmax(0, 1fr));
   gap: 24px;
   padding-block: 26px;
-  border-bottom: 1px solid var(--line);
 }
 .now b {
   display: block;
@@ -429,6 +431,14 @@ header.top .wrap {
 /* ---------- Títulos de sección ---------- */
 section.s {
   padding-top: 112px;
+}
+@media (max-width: 700px) {
+  section.s {
+    padding-top: 80px;
+  }
+  .contact {
+    padding-block: 96px 64px;
+  }
 }
 .sh {
   display: flex;
@@ -583,7 +593,7 @@ section.s {
   gap: 6px;
   flex-wrap: wrap;
   margin-top: auto;
-  padding-top: 4px;
+  padding-top: 8px;
 }
 .tags span {
   font: 400 0.74rem var(--mono);
@@ -591,10 +601,6 @@ section.s {
   border-radius: 999px;
   border: 1px solid var(--line2);
   color: var(--muted);
-}
-.url {
-  font: 400 0.8rem var(--mono);
-  color: var(--blue);
 }
 @media (max-width: 900px) {
   .projects {
@@ -746,6 +752,9 @@ section.s {
 @media (max-width: 900px) {
   .tools {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tools li:last-child {
+    grid-column: span 2;
   }
   .ai-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

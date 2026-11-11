@@ -40,7 +40,6 @@ export default function ProjectCard({ proyecto }: { proyecto: Proyecto }) {
             <span key={t}>{t}</span>
           ))}
         </div>
-        <span className="url">{quitarProtocolo(proyecto.url)}</span>
       </div>
     </a>
   );

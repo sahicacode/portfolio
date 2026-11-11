@@ -949,6 +949,14 @@ section.s {
   color: var(--ok);
   border-color: rgba(111, 207, 143, 0.4);
 }
+.area-it {
+  color: #f0b45b;
+  border-color: rgba(240, 180, 91, 0.4);
+}
+.area-operations {
+  color: #e88fb0;
+  border-color: rgba(232, 143, 176, 0.4);
+}
 @media (max-width: 820px) {
   .exp li {
     grid-template-columns: minmax(0, 1fr);
@@ -1049,7 +1057,7 @@ section.s {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding-block: 130px 90px;
+  padding-block: 112px 80px;
 }
 .contact::before {
   content: "";
@@ -1071,7 +1079,7 @@ section.s {
 .contact h2 {
   font-family: var(--titulos);
   font-weight: 700;
-  font-size: clamp(2.8rem, 8vw, 6.4rem);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
   line-height: 1;
   letter-spacing: -0.025em;
 }
@@ -1089,7 +1097,7 @@ section.s {
 .mail {
   font-family: var(--titulos);
   font-weight: 500;
-  font-size: clamp(1.3rem, 3.6vw, 2.2rem);
+  font-size: clamp(1.15rem, 3vw, 1.7rem);
   overflow-wrap: anywhere;
 }
 .mail:hover {

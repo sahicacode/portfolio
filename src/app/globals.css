@@ -697,9 +697,15 @@ section.s {
   color: var(--blue);
   margin-top: 4px;
 }
-@media (max-width: 420px) {
-  .more a {
+/* en el móvil la imagen pequeña a la izquierda, como en el ordenador */
+@media (max-width: 520px) {
+  .more {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .more a {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px;
   }
 }
 
@@ -794,9 +800,28 @@ section.s {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+/* en el móvil igual que "más proyectos": imagen pequeña a la izquierda */
 @media (max-width: 520px) {
   .ai-grid {
     grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .ai-card {
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px;
+    border-radius: 14px;
+    align-items: start;
+  }
+  .ai-card img {
+    border-radius: 8px;
+    aspect-ratio: 16 / 10;
+    border: 1px solid var(--line);
+  }
+  .ai-card div {
+    padding: 0;
+    gap: 2px;
   }
 }
 
@@ -1135,6 +1160,23 @@ section.s {
 }
 .mailrow button:hover {
   border-color: var(--muted);
+}
+
+/* botones de contacto en el móvil: todos del mismo ancho */
+@media (max-width: 520px) {
+  .mail {
+    font-size: min(var(--fs-h3), 5.2vw);
+  }
+  .contact .ctas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact .ctas .btn {
+    justify-content: center;
+  }
+  .contact .ctas .primary {
+    grid-column: 1 / -1;
+  }
 }
 
 footer .wrap {

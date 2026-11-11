@@ -64,6 +64,10 @@ export const proyectos: Proyecto[] = [
       "Household chores as a game. Create a home, share tasks, earn points and see the daily ranking.",
     tecnologias: ["Laravel", "Inertia", "React", "Tailwind"],
   },
+];
+
+// Proyectos más pequeños y demos
+export const otrosProyectos: Proyecto[] = [
   {
     nombre: "NovaBank",
     url: "https://novabank-prestamos.vercel.app",
@@ -82,10 +86,6 @@ export const proyectos: Proyecto[] = [
       "A free online converter for images, documents, audio and video. No sign-up needed.",
     tecnologias: ["Next.js", "TypeScript"],
   },
-];
-
-// Proyectos más pequeños y demos
-export const otrosProyectos: Proyecto[] = [
   {
     nombre: "FakeCheckIA",
     url: "https://noticiasfalsas.vercel.app",

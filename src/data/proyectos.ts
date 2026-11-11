@@ -7,7 +7,6 @@ export type Proyecto = {
   etiqueta: string; // tipo de proyecto y año
   descripcion: string;
   tecnologias: string[];
-  grande?: boolean;
 };
 
 export const proyectos: Proyecto[] = [
@@ -19,7 +18,6 @@ export const proyectos: Proyecto[] = [
     descripcion:
       "My partner and I are visiting all 106 towns in the province of Seville. I designed and built the site: a page with the history, sources and video of each town, search, and 11 regions.",
     tecnologias: ["Astro", "Markdown", "SEO", "Accessibility"],
-    grande: true,
   },
   {
     nombre: "ConquistaSevilla",
@@ -47,7 +45,6 @@ export const proyectos: Proyecto[] = [
     descripcion:
       "A directory of software you pay for once instead of every month. Each app shows its real price, how long updates last and whether it works without the vendor's server, plus alternatives to popular subscriptions.",
     tecnologias: ["Directory", "Filters", "SEO", "Newsletter"],
-    grande: true,
   },
   {
     nombre: "SAHICA",

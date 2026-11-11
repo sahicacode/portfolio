@@ -55,15 +55,15 @@ export default function About() {
           </div>
           <div className="nums">
             <div>
-              <b>8</b>
+              <b data-contar="8">8</b>
               <span>live projects</span>
             </div>
             <div>
-              <b>4</b>
+              <b data-contar="4">4</b>
               <span>countries worked in</span>
             </div>
             <div>
-              <b>2</b>
+              <b data-contar="2">2</b>
               <span>languages</span>
             </div>
           </div>

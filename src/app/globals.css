@@ -481,23 +481,12 @@ section.s {
   transform: translateY(-6px);
   border-color: var(--line2);
 }
-.pj.big {
-  grid-column: span 2;
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-}
 .stage {
   position: relative;
-  height: 300px;
+  height: 280px;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background: radial-gradient(90% 80% at 50% 0%, #17243b, #0f131b 70%);
-}
-.pj.big .stage {
-  height: auto;
-  min-height: 380px;
-  border-bottom: 0;
-  border-right: 1px solid var(--line);
 }
 .win {
   position: absolute;
@@ -549,10 +538,6 @@ section.s {
   flex: 1;
   min-width: 0;
 }
-.pj.big .info {
-  justify-content: center;
-  padding: 36px;
-}
 .row {
   display: flex;
   justify-content: space-between;
@@ -569,12 +554,10 @@ section.s {
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
-.pj.big .info h3 {
-  font-size: 2.5rem;
-}
 .info p {
   color: var(--muted);
   font-size: 0.96rem;
+  min-height: 4.8em; /* 3 líneas, para que todas las tarjetas midan igual */
 }
 .go {
   width: 38px;
@@ -617,20 +600,8 @@ section.s {
   .projects {
     grid-template-columns: minmax(0, 1fr);
   }
-  .pj.big {
-    grid-column: auto;
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .pj.big .stage {
-    min-height: 260px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
   .stage {
     height: 240px;
-  }
-  .pj.big .info {
-    padding: 24px 26px 26px;
   }
 }
 
@@ -869,54 +840,37 @@ section.s {
 }
 
 /* ---------- Experiencia ---------- */
-.route {
+.countries {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  position: relative;
+  gap: 14px;
   margin-bottom: 44px;
 }
-.route::before {
-  content: "";
-  position: absolute;
-  left: 6px;
-  right: 6px;
-  top: 6px;
-  height: 1px;
-  background: var(--line2);
-}
-.stop {
-  position: relative;
-  padding-top: 26px;
+.country {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
 }
-.stop::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: var(--blue);
-  box-shadow: 0 0 0 5px rgba(90, 162, 255, 0.15);
+.country .mono {
+  color: var(--blue);
+  font-size: 0.76rem;
 }
-.stop b {
+.country b {
   font-family: var(--titulos);
   font-weight: 700;
+  font-size: 1.2rem;
 }
-.stop span {
+.country span:last-child {
   color: var(--muted);
   font-size: 0.86rem;
 }
 @media (max-width: 760px) {
-  .route {
+  .countries {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    row-gap: 24px;
-  }
-  .route::before {
-    display: none;
   }
 }
 .exp li {
@@ -1008,15 +962,22 @@ section.s {
   border-color: var(--line2);
   transform: translateY(-3px);
 }
+@property --p {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
 .gauge {
   --c: var(--ok);
+  --p: var(--v);
+  transition: --p 1.6s cubic-bezier(0.2, 0.8, 0.2, 1);
   width: 76px;
   height: 76px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   position: relative;
-  background: conic-gradient(var(--c) calc(var(--v) * 1%), var(--line) 0);
+  background: conic-gradient(var(--c) calc(var(--p) * 1%), var(--line) 0);
   margin-bottom: 6px;
 }
 .gauge::before {
@@ -1124,6 +1085,76 @@ footer .wrap {
   padding-block: 24px 40px;
   border-top: 1px solid var(--line);
   color: var(--dim);
+}
+
+
+/* ---------- Animaciones ---------- */
+/* Aparecer al hacer scroll (la clase .reveal la pone Animaciones.tsx) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+/* Los anillos empiezan vacíos y se rellenan al verse */
+.ck.reveal .gauge {
+  --p: 0;
+}
+.ck.reveal.visible .gauge {
+  --p: var(--v);
+}
+/* Las tarjetas mantienen su hover después de aparecer */
+.pj.reveal.visible:hover {
+  transform: translateY(-6px);
+}
+.ck.reveal.visible:hover,
+.ai-card.reveal.visible:hover {
+  transform: translateY(-4px);
+}
+
+/* Entrada del hero */
+.hero-l > *,
+.photo {
+  animation: entrar 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.hero-l > :nth-child(2) {
+  animation-delay: 0.1s;
+}
+.hero-l > :nth-child(3) {
+  animation-delay: 0.2s;
+}
+.hero-l > :nth-child(4) {
+  animation-delay: 0.3s;
+}
+.photo {
+  animation-name: aparecer;
+  animation-duration: 1.4s;
+}
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+}
+
+/* Brillo azul del hero que respira despacio */
+.hero::before {
+  animation: respirar 8s ease-in-out infinite;
+}
+@keyframes respirar {
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
 }
 
 /* 404 */

@@ -22,7 +22,7 @@ export default function Checks() {
         {notas.map((n) => (
           <div className="ck" key={n.nombre}>
             <div className="gauge" style={{ "--v": n.valor } as React.CSSProperties}>
-              <span>{n.valor}</span>
+              <span data-contar={n.valor}>{n.valor}</span>
             </div>
             <b>{n.nombre}</b>
             <small>{n.texto}</small>

@@ -1,10 +1,11 @@
 import { experiencia, educacion, certificados, idiomas } from "@/data/experiencia";
 
+// Países donde he trabajado, en orden cronológico
 const paises = [
-  { pais: "Spain", texto: "Web, quality, IT" },
-  { pais: "Italy", texto: "Erasmus+, IT support" },
-  { pais: "Netherlands", texto: "Logistics" },
-  { pais: "Ireland", texto: "Production" },
+  { pais: "Spain", años: "2017 – now", texto: "Web, quality, IT" },
+  { pais: "Italy", años: "2018", texto: "Erasmus+, IT support" },
+  { pais: "Ireland", años: "2021 – 2022", texto: "Production" },
+  { pais: "Netherlands", años: "2023", texto: "Logistics" },
 ];
 
 export default function Experience() {
@@ -14,14 +15,15 @@ export default function Experience() {
         <div>
           <span className="k mono">Experience</span>
           <h2>
-            Four countries, <em>one direction.</em>
+            Four countries, <em>one career.</em>
           </h2>
         </div>
       </div>
 
-      <div className="route">
+      <div className="countries">
         {paises.map((p) => (
-          <div className="stop" key={p.pais}>
+          <div className="country" key={p.pais}>
+            <span className="mono">{p.años}</span>
             <b>{p.pais}</b>
             <span>{p.texto}</span>
           </div>

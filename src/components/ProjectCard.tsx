@@ -8,7 +8,7 @@ function quitarProtocolo(url: string) {
 export default function ProjectCard({ proyecto }: { proyecto: Proyecto }) {
   return (
     <a
-      className={proyecto.grande ? "pj big" : "pj"}
+      className="pj"
       href={proyecto.url}
       target="_blank"
       rel="noopener"

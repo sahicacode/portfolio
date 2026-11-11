@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import Checks from "@/components/Checks";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Animaciones from "@/components/Animaciones";
 
 // Datos para Google (schema.org)
 const persona = {
@@ -41,6 +42,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <Animaciones />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(persona) }} />
     </>
   );

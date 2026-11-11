@@ -5,7 +5,7 @@ export default function Now() {
         <span className="k mono">Now</span>
         <div>
           <b>Web developer at Tutrocito</b>
-          <span>WordPress, WooCommerce and AI tools</span>
+          <span>WordPress, WooCommerce and AI automations</span>
         </div>
         <div>
           <b>Quality inspector for Airbus</b>

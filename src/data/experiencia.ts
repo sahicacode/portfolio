@@ -15,7 +15,7 @@ export const experiencia: Puesto[] = [
     puesto: "Web Developer (internship)",
     empresa: "Tutrocito",
     lugar: "Seville",
-    detalle: "WordPress and WooCommerce shops, PHP and JavaScript, UX/UI and AI tools in the daily workflow.",
+    detalle: "WordPress and WooCommerce shops, PHP and JavaScript, UX/UI, and AI automations for daily tasks.",
     area: "Web",
   },
   {
@@ -96,7 +96,7 @@ export const experiencia: Puesto[] = [
     puesto: "IT Support Technician",
     empresa: "Sermicro",
     lugar: "Seville",
-    detalle: "First job in IT: user support and equipment.",
+    detalle: "User support, hardware and equipment setup.",
     area: "IT",
   },
 ];

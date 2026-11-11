@@ -21,7 +21,8 @@ const webs = [
 ];
 
 fs.mkdirSync('public/proyectos', { recursive: true });
-const browser = await chromium.launch();
+// Uso Google Chrome (no Chromium) para que se vean los vídeos de fondo en mp4
+const browser = await chromium.launch({ channel: 'chrome' });
 
 for (const [nombre, url] of webs) {
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, locale: 'es-ES' });

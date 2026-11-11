@@ -24,15 +24,15 @@ export const experiencia: Puesto[] = [
     puesto: "Quality Inspector, Airbus parts",
     empresa: "Rhenus LTK",
     lugar: "Seville",
-    detalle: "Inspection of A400M aircraft parts: part number, batch and serial checks, EASA Form 1 and SAP. Nothing ships without being checked.",
+    detalle: "Quality inspection of A400M aircraft parts before they ship. Nothing leaves without being checked.",
     area: "Quality",
   },
   {
     fechas: "2024 – 2025",
-    puesto: "Quality Inspector, Airbus parts",
+    puesto: "Documentation Technician, Airbus parts",
     empresa: "Kuehne+Nagel",
     lugar: "Seville",
-    detalle: "Quality control of aeronautical parts and documentation for Airbus.",
+    detalle: "Documentation of aircraft parts for Airbus: part number, batch and serial checks, EASA Form 1 and SAP.",
     area: "Quality",
   },
   {

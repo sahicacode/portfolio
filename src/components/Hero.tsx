@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="wrap">
         <div className="hero-l">
           <span className="hello mono">
-            <i></i>Open to work · Front-end roles
+            <i></i>Open to work<span className="largo"> · Front-end roles</span>
           </span>
           <h1>
             Front-end developer who builds things that <em>pass inspection.</em>

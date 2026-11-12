@@ -58,7 +58,7 @@ export const proyectos: Proyecto[] = [
   {
     nombre: "Choresia",
     url: "https://choresia.sahica.com",
-    imagen: "/proyectos/choresia.webp",
+    imagen: "/proyectos/choresia-app.webp",
     etiqueta: "Web app · 2025",
     descripcion:
       "Household chores as a game. Create a home, share tasks, earn points and see the daily ranking.",
@@ -71,7 +71,7 @@ export const otrosProyectos: Proyecto[] = [
   {
     nombre: "NovaBank",
     url: "https://novabank-prestamos.vercel.app",
-    imagen: "/proyectos/novabank.webp",
+    imagen: "/proyectos/novabank-panel.webp",
     etiqueta: "Full-stack app · 2025",
     descripcion:
       "A loan manager for people and businesses: clients, instalment calculations, reports and Excel export, behind a login.",

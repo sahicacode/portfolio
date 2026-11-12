@@ -1,4 +1,4 @@
-const tecnologias = ["React", "TypeScript", "Next.js", "JavaScript", "Astro", "PHP", "MySQL", "Laravel", "WordPress", "Git"];
+const tecnologias = ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "WordPress", "Git", "GitHub", "Learning React"];
 
 export default function TechStrip() {
   return (

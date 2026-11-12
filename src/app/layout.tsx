@@ -7,7 +7,7 @@ const titulos = Ubuntu({ variable: "--font-titulos", subsets: ["latin"], weight:
 const mono = Ubuntu_Mono({ variable: "--font-mono", subsets: ["latin"], weight: ["400", "700"] });
 
 const descripcion =
-  "Front-end developer from Seville. React, Next.js and TypeScript. Projects, experience and contact.";
+  "Front-end developer from Seville. HTML, CSS, JavaScript, PHP and WordPress. Projects, experience and contact.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio.sahica.com"),

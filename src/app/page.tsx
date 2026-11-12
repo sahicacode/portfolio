@@ -20,7 +20,7 @@ const persona = {
   url: "https://portfolio.sahica.com",
   address: { "@type": "PostalAddress", addressLocality: "Seville", addressCountry: "ES" },
   sameAs: ["https://github.com/sahicacode", "https://www.linkedin.com/in/sara-hidalgo-caro/"],
-  knowsAbout: ["React", "Next.js", "TypeScript", "JavaScript", "WordPress", "PHP"],
+  knowsAbout: ["HTML", "CSS", "JavaScript", "PHP", "WordPress", "MySQL"],
 };
 
 export default function Home() {

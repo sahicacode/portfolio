@@ -14,7 +14,7 @@ export default function Hero() {
             <em>Front&#8209;end developer.</em>
           </h1>
           <p className="intro">
-            I&apos;m a <b>web developer</b> from Seville. I build apps with <b>React, Next.js and TypeScript</b>, and my
+            I&apos;m a <b>web developer</b> from Seville. I build websites with <b>HTML, CSS, JavaScript and PHP</b>, I&apos;m learning <b>React</b>, and my
             background in IT support and
             quality control for <b>Airbus</b> means I care about the details, from the code to the last pixel.
           </p>
@@ -39,8 +39,9 @@ export default function Hero() {
             <pre>
               <span className="k">const</span> <span className="p">sara</span> = {"{"}
               {"\n  "}role: <span className="s">&quot;Front-End Dev&quot;</span>,
-              {"\n  "}stack: [<span className="s">&quot;React&quot;</span>, <span className="s">&quot;TS&quot;</span>,{" "}
-              <span className="s">&quot;Next.js&quot;</span>],
+              {"\n  "}stack: [<span className="s">&quot;JS&quot;</span>, <span className="s">&quot;PHP&quot;</span>,{" "}
+              <span className="s">&quot;WP&quot;</span>],
+              {"\n  "}learning: <span className="s">&quot;React&quot;</span>,
               {"\n  "}qualityCheck: <span className="k">true</span>,
               {"\n  "}openToWork: <span className="k">true</span>,
               {"\n"}

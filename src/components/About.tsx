@@ -1,19 +1,12 @@
 const pildoras = {
   "Front end": [
-    ["React", "#61dafb"],
-    ["Next.js", "#ededed"],
-    ["TypeScript", "#3178c6"],
-    ["JavaScript", "#f7df1e"],
-    ["Astro", "#ff5d01"],
     ["HTML & CSS", "#e34f26"],
+    ["JavaScript", "#f7df1e"],
   ],
   "Back end & CMS": [
     ["PHP", "#777bb4"],
-    ["Laravel", "#ff2d20"],
-    ["MySQL", "#4479a1"],
-    ["Node.js", "#5fa04e"],
     ["WordPress", "#3b9ad9"],
-    ["WooCommerce", "#96588a"],
+    ["MySQL", "#4479a1"],
   ],
   "Systems & tools": [
     ["Git & GitHub", "#f05032"],
@@ -23,8 +16,17 @@ const pildoras = {
     ["GA4", "#f9ab00"],
   ],
   "Learning now": [
+    ["React", "#61dafb"],
+    ["Next.js", "#ededed"],
+    ["TypeScript", "#3178c6"],
+    ["Astro", "#ff5d01"],
+    ["Tailwind CSS", "#38bdf8"],
+    ["Laravel", "#ff2d20"],
+    ["Node.js", "#5fa04e"],
+    ["Prisma", "#5a67d8"],
+    ["PostgreSQL", "#4169e1"],
+    ["WooCommerce", "#96588a"],
     ["C# / .NET", "#9b4f96"],
-    ["SQL Server", "#cc2927"],
   ],
 };
 
@@ -47,7 +49,7 @@ export default function About() {
               abroad. That gave me a solid base that most front-end developers don&apos;t have.
             </p>
             <p>
-              Today I build web apps and I also work as a <b>quality inspector of Airbus parts</b>, where every
+              Today I build websites and I also work as a <b>quality inspector of Airbus parts</b>, where every
               detail is checked and documented. I bring the same habit to code: <b>accessible</b>, <b>fast</b> pages,
               tested on a real phone before they go live.
             </p>
@@ -55,7 +57,7 @@ export default function About() {
           </div>
           <div className="nums">
             <div>
-              <b data-contar="8">8</b>
+              <b data-contar="6">6</b>
               <span>live projects</span>
             </div>
             <div>

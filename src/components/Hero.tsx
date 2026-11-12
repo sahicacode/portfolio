@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="photo">
-          <Image src="/sara-hidalgo.webp" alt="Sara Hidalgo" width={900} height={895} priority />
+          <Image src="/sara-hidalgo-foto.webp" alt="Sara Hidalgo" width={900} height={871} priority />
           <div className="code" aria-hidden="true">
             <header>
               <i></i>

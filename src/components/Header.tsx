@@ -11,7 +11,7 @@ export default function Header() {
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
-          <a className="cv" href="/cv/Sara-Hidalgo-Caro-CV.pdf" target="_blank" rel="noopener">
+          <a className="cv" href="/cv/Sara-Hidalgo-Caro-CV.pdf" download>
             CV
           </a>
         </nav>

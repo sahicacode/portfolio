@@ -569,9 +569,18 @@ section.s {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* la ventana se rellena entera con la captura (y no se corta el final) */
+.win {
+  display: flex;
+  flex-direction: column;
+}
 .win img {
   width: 100%;
-  height: auto;
+  flex: 1;
+  min-height: 0;
+  margin-bottom: 24px; /* lo que la ventana sobresale por abajo */
+  object-fit: cover;
+  object-position: top;
 }
 .info {
   padding: 24px 26px 26px;

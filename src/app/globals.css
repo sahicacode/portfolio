@@ -666,7 +666,7 @@ section.s {
 /* Más proyectos */
 .more {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 4 demos: 2 x 2 */
   gap: 14px;
 }
 .more a {

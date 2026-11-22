@@ -506,7 +506,7 @@ section.s {
 /* ---------- Proyectos ---------- */
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columnas x 2 filas en el ordenador */
   gap: 20px;
 }
 .pj {
@@ -526,7 +526,7 @@ section.s {
 }
 .stage {
   position: relative;
-  height: 280px;
+  height: 210px;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background: radial-gradient(90% 80% at 50% 0%, #17243b, #0f131b 70%);
@@ -583,7 +583,7 @@ section.s {
   object-position: top;
 }
 .info {
-  padding: 24px 26px 26px;
+  padding: 20px 22px 22px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -609,7 +609,7 @@ section.s {
 .info p {
   color: var(--muted);
   font-size: var(--fs-body);
-  min-height: 4.8em; /* 3 líneas, para que todas las tarjetas midan igual */
+  min-height: 6.4em; /* 4 líneas, para que todas las tarjetas midan igual */
 }
 .go {
   width: 38px;
@@ -644,12 +644,22 @@ section.s {
   border: 1px solid var(--line2);
   color: var(--muted);
 }
-@media (max-width: 900px) {
+/* tablet: 2 columnas */
+@media (max-width: 1000px) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* móvil: 1 columna */
+@media (max-width: 640px) {
   .projects {
     grid-template-columns: minmax(0, 1fr);
   }
   .stage {
-    height: 240px;
+    height: 220px;
+  }
+  .info p {
+    min-height: 0;
   }
 }
 

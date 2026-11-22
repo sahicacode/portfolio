@@ -6,16 +6,14 @@ import fs from 'node:fs';
 
 // Choresia y NovaBank piden login: sus capturas las hago yo a mano
 const webs = [
-  ['sahica', 'https://sahica.com/'],
+  ['sahica-web', 'https://sahica.com/'],
+  ['reformas', 'https://reformas.sahica.com/'],
   ['losjipis', 'https://losjipis.com/'],
   ['conquistasevilla', 'https://conquistasevilla.com/'],
   ['atmosferadev', 'https://atmosferadev.sahica.com/'],
   ['licenciasunavez', 'https://licenciasunavez.sahica.com/'],
-  ['imageformatx', 'https://imageformatx.vercel.app/'],
-  ['fakecheckia', 'https://noticiasfalsas.vercel.app/'],
   ['pizzeria', 'https://pizzeriademogorgon.sahica.com/'],
   ['djwilly', 'https://djwillyeltuerto.sahica.com/'],
-  ['jurassicfilm', 'https://jurassicfilm.sahica.com/'],
   ['harryphotographer', 'https://harryphotographer.sahica.com/'],
 ];
 

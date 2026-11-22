@@ -9,6 +9,7 @@ export type Proyecto = {
   tecnologias: string[];
 };
 
+// Proyectos destacados: 6 tarjetas grandes (3 columnas x 2 filas en el ordenador)
 export const proyectos: Proyecto[] = [
   {
     nombre: "Los Jipis",
@@ -29,13 +30,22 @@ export const proyectos: Proyecto[] = [
     tecnologias: ["PHP", "MySQL", "JavaScript", "OpenStreetMap"],
   },
   {
-    nombre: "AtmosferaDev",
-    url: "https://atmosferadev.sahica.com",
-    imagen: "/proyectos/atmosferadev.webp",
-    etiqueta: "Social app · 2026",
+    nombre: "SAHICA",
+    url: "https://sahica.com",
+    imagen: "/proyectos/sahica-web.webp",
+    etiqueta: "My web agency · 2026",
     descripcion:
-      "A social network for developers in Spain. Find devs in your city by stack, join a project or meet for a coffee. Profiles can import projects from GitHub.",
-    tecnologias: ["Next.js", "TypeScript", "GitHub API"],
+      "My own brand: websites for small businesses in Seville that show up on Google, in AI search and on mobile. With a free guide and a step-by-step brief.",
+    tecnologias: ["Astro", "PHP", "SEO"],
+  },
+  {
+    nombre: "Reformas 10 de Abril",
+    url: "https://reformas.sahica.com",
+    imagen: "/proyectos/reformas.webp",
+    etiqueta: "Business website · 2026",
+    descripcion:
+      "Four-page website for a renovation company in Seville: painting, floors and kitchens, with before-and-after photos and quotes by WhatsApp.",
+    tecnologias: ["Astro", "SEO", "Animations"],
   },
   {
     nombre: "Licencias Una Vez",
@@ -47,14 +57,18 @@ export const proyectos: Proyecto[] = [
     tecnologias: ["Directory", "Filters", "SEO", "Newsletter"],
   },
   {
-    nombre: "SAHICA",
-    url: "https://sahica.com",
-    imagen: "/proyectos/sahica.webp",
-    etiqueta: "My web agency",
+    nombre: "AtmosferaDev",
+    url: "https://atmosferadev.sahica.com",
+    imagen: "/proyectos/atmosferadev.webp",
+    etiqueta: "Social app · 2026",
     descripcion:
-      "My own brand for web design, SEO and tech support for small businesses in Seville, with landing pages for each type of client.",
-    tecnologias: ["WordPress", "Elementor", "SEO"],
+      "A social network for developers in Spain. Find devs in your city by stack, join a project or meet for a coffee. Profiles can import projects from GitHub.",
+    tecnologias: ["Next.js", "TypeScript", "GitHub API"],
   },
+];
+
+// Más proyectos y demos
+export const otrosProyectos: Proyecto[] = [
   {
     nombre: "Choresia",
     url: "https://choresia.sahica.com",
@@ -64,10 +78,6 @@ export const proyectos: Proyecto[] = [
       "Household chores as a game. Create a home, share tasks, earn points and see the daily ranking.",
     tecnologias: ["Laravel", "Inertia", "React", "Tailwind"],
   },
-];
-
-// Proyectos más pequeños y demos
-export const otrosProyectos: Proyecto[] = [
   {
     nombre: "NovaBank",
     url: "https://novabank-prestamos.vercel.app",
@@ -76,31 +86,6 @@ export const otrosProyectos: Proyecto[] = [
     descripcion:
       "A loan manager for people and businesses: clients, instalment calculations, reports and Excel export, behind a login.",
     tecnologias: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-  },
-  {
-    nombre: "Imageformatx",
-    url: "https://imageformatx.vercel.app",
-    imagen: "/proyectos/imageformatx.webp",
-    etiqueta: "Web tool · 2025",
-    descripcion:
-      "A free online converter for images, documents, audio and video. No sign-up needed.",
-    tecnologias: ["Next.js", "TypeScript"],
-  },
-  {
-    nombre: "FakeCheckIA",
-    url: "https://noticiasfalsas.vercel.app",
-    imagen: "/proyectos/fakecheckia.webp",
-    etiqueta: "AI tool",
-    descripcion: "Checks headlines and links against scientific sources with AI and gives a truth score.",
-    tecnologias: ["Next.js", "FastAPI", "OpenAI"],
-  },
-  {
-    nombre: "Codemetry",
-    url: "/proyectos/ITConsulting/index.html",
-    imagen: "/proyectos/codemetry.webp",
-    etiqueta: "Demo site",
-    descripcion: "Website for an IT consultancy: development, cloud and cybersecurity.",
-    tecnologias: ["HTML", "CSS", "JavaScript"],
   },
   {
     nombre: "Pizzería Demogorgon",
@@ -116,14 +101,6 @@ export const otrosProyectos: Proyecto[] = [
     imagen: "/proyectos/djwilly.webp",
     etiqueta: "WordPress demo",
     descripcion: "DJ website with gallery, events and a booking form.",
-    tecnologias: ["WordPress"],
-  },
-  {
-    nombre: "Jurassic Film",
-    url: "https://jurassicfilm.sahica.com",
-    imagen: "/proyectos/jurassicfilm.webp",
-    etiqueta: "WordPress demo",
-    descripcion: "Website for a film and video production agency.",
     tecnologias: ["WordPress"],
   },
   {

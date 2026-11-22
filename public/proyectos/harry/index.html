@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harry Photographer · Demo</title>
+<meta name="description" content="Demo de la web de un fotógrafo de naturaleza y safaris: fauna salvaje, paisajes y reportajes de viaje. Web de prueba hecha por Sara Hidalgo.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f5f1ea">
+<link rel="icon" href="img/icono.svg" type="image/svg+xml">
+<link rel="preload" href="fuentes/cormorant-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="estilos.css?v=2611c">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div class="aviso-demo" role="note">Demo · fotógrafo inventado · <a href="/proyectos/">ver más demos</a></div>
+
+<header class="nav">
+  <a class="marca" href="#inicio">Harry <i>Photographer</i></a>
+  <nav aria-label="Principal">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#proyectos">Proyectos</a>
+  </nav>
+  <a class="btn btn-peq" href="#contacto">Háblame</a>
+</header>
+
+<main id="contenido">
+  <section class="hero" id="inicio" aria-label="Portada">
+    <div class="pases" aria-hidden="true">
+      <img src="img/hero-1.webp" alt="" width="1920" height="1280" fetchpriority="high">
+      <img src="img/hero-2.webp" alt="" width="1920" height="1280" loading="lazy">
+      <img src="img/hero-3.webp" alt="" width="1920" height="1280" loading="lazy">
+    </div>
+    <div class="hero-txt">
+      <p class="pre">Bienvenidos a mi vida</p>
+      <h1>Harry <i>Photographer</i></h1>
+      <p class="lead">La esencia salvaje del safari africano, en imágenes que se sienten.</p>
+      <a class="btn" href="#galeria">Ver la galería</a>
+    </div>
+    <p class="hero-pie" aria-hidden="true"><span>Fauna</span><span>Paisaje</span><span>Safari</span></p>
+  </section>
+
+  <section class="sec sobre" id="sobre-mi">
+    <div class="sobre-foto aparece"><img src="img/sobre-mi.webp" alt="Dos fotógrafos con sus cámaras al atardecer" width="900" height="1200" loading="lazy"></div>
+    <div class="sobre-txt aparece">
+      <p class="pre">Sobre mí</p>
+      <h2>Un toque de naturaleza hace que el mundo entero <i>sea familiar</i></h2>
+      <p>Fotografío fauna salvaje desde 2010. Cada amanecer, cada sonido y cada mirada de un animal es una historia, y mi trabajo es estar ahí, en silencio, cuando la luz, el movimiento y la emoción coinciden.</p>
+      <p>Acompaño expediciones y hago reportajes completos del viaje. Trabajo con paciencia y respeto: nunca intervengo en la escena.</p>
+      <dl class="datos">
+        <div><dt>2010</dt><dd>empecé a fotografiar fauna</dd></div>
+        <div><dt>3</dt><dd>formas de trabajar</dd></div>
+        <div><dt>25</dt><dd>fotos en la galería</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="frase" aria-label="Cita">
+    <img src="img/frase.webp" alt="" width="1920" height="1148" loading="lazy">
+    <blockquote class="aparece">La fotografía de safari es un viaje de paciencia, intuición y respeto: momentos que solo pasan <i>una vez</i>.</blockquote>
+  </section>
+
+  <section class="sec" id="servicios">
+    <div class="cab"><p class="pre">Qué hago</p><h2>Servicios</h2></div>
+    <ol class="servicios">
+      <li class="aparece"><img src="img/servicio-fauna.webp" alt="Tigre en la nieve" width="900" height="600" loading="lazy"><div><span>01</span><h3>Fotografía de fauna salvaje</h3><p>Retratos de animales en libertad: su comportamiento, su mirada y su movimiento.</p></div></li>
+      <li class="aparece"><img src="img/servicio-paisaje.webp" alt="Antílopes al atardecer en la sabana" width="900" height="600" loading="lazy"><div><span>02</span><h3>Paisajes naturales</h3><p>Atardeceres, sabana, montañas y horizontes que cuentan dónde estás.</p></div></li>
+      <li class="aparece"><img src="img/servicio-safari.webp" alt="Hipopótamos en el agua" width="900" height="600" loading="lazy"><div><span>03</span><h3>Reportajes de safari</h3><p>El viaje completo contado en fotos, con mirada artística y naturalista.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="sec" id="galeria">
+    <div class="cab"><p class="pre">Proyectos</p><h2>Galería</h2><p class="nota">Pulsa una foto para verla en grande.</p></div>
+    <ul class="galeria">
+      <li><button type="button" class="foto" data-grande="img/grande/lion-8947711.webp" aria-label="Ampliar: León joven mirando a cámara"><img src="img/galeria/lion-8947711.webp" alt="León joven mirando a cámara" width="800" height="768" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/zebra-6275284.webp" aria-label="Ampliar: Cebra pastando"><img src="img/galeria/zebra-6275284.webp" alt="Cebra pastando" width="800" height="532" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/owl-1834152.webp" aria-label="Ampliar: Búho en una rama"><img src="img/galeria/owl-1834152.webp" alt="Búho en una rama" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/cheetah-4818603.webp" aria-label="Ampliar: Guepardo de cerca"><img src="img/galeria/cheetah-4818603.webp" alt="Guepardo de cerca" width="800" height="530" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/birds-1099071.webp" aria-label="Ampliar: Flamencos en el agua"><img src="img/galeria/birds-1099071.webp" alt="Flamencos en el agua" width="800" height="536" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/koala-630117.webp" aria-label="Ampliar: Koala de cerca"><img src="img/galeria/koala-630117.webp" alt="Koala de cerca" width="800" height="531" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/amurtiger-1990571.webp" aria-label="Ampliar: Tigre de Amur en la nieve"><img src="img/galeria/amurtiger-1990571.webp" alt="Tigre de Amur en la nieve" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/fox-715588.webp" aria-label="Ampliar: Zorro en la nieve"><img src="img/galeria/fox-715588.webp" alt="Zorro en la nieve" width="800" height="537" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/hippopotamus-95472.webp" aria-label="Ampliar: Hipopótamos en el agua"><img src="img/galeria/hippopotamus-95472.webp" alt="Hipopótamos en el agua" width="800" height="544" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/butterfly-8313010.webp" aria-label="Ampliar: Mariposa sobre una flor"><img src="img/galeria/butterfly-8313010.webp" alt="Mariposa sobre una flor" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/safari-192649.webp" aria-label="Ampliar: Safari al atardecer desde el coche"><img src="img/galeria/safari-192649.webp" alt="Safari al atardecer desde el coche" width="800" height="478" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/horses-430441.webp" aria-label="Ampliar: Caballos galopando en la niebla"><img src="img/galeria/horses-430441.webp" alt="Caballos galopando en la niebla" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/squirrel-8605258.webp" aria-label="Ampliar: Ardilla comiendo"><img src="img/galeria/squirrel-8605258.webp" alt="Ardilla comiendo" width="800" height="766" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/lion-3289124.webp" aria-label="Ampliar: León mirando al cielo"><img src="img/galeria/lion-3289124.webp" alt="León mirando al cielo" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/frog-5319326.webp" aria-label="Ampliar: Rana bajo una hoja en la lluvia"><img src="img/galeria/frog-5319326.webp" alt="Rana bajo una hoja en la lluvia" width="800" height="571" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/white-horse-1136093.webp" aria-label="Ampliar: Caballo blanco"><img src="img/galeria/white-horse-1136093.webp" alt="Caballo blanco" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/sparrow-3698507.webp" aria-label="Ampliar: Gorrión en un alambre"><img src="img/galeria/sparrow-3698507.webp" alt="Gorrión en un alambre" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/zebra-630149.webp" aria-label="Ampliar: Ojo de cebra de cerca"><img src="img/galeria/zebra-630149.webp" alt="Ojo de cebra de cerca" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/bird-1045954.webp" aria-label="Ampliar: Pájaro volando junto a unas flores"><img src="img/galeria/bird-1045954.webp" alt="Pájaro volando junto a unas flores" width="800" height="532" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/lion-3576045.webp" aria-label="Ampliar: León de cerca"><img src="img/galeria/lion-3576045.webp" alt="León de cerca" width="800" height="506" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/animal-4683342.webp" aria-label="Ampliar: Antílopes peleando al atardecer"><img src="img/galeria/animal-4683342.webp" alt="Antílopes peleando al atardecer" width="800" height="450" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/horse-6724544.webp" aria-label="Ampliar: Caballo de cerca"><img src="img/galeria/horse-6724544.webp" alt="Caballo de cerca" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/squirrel-8473819.webp" aria-label="Ampliar: Ardilla en una rama"><img src="img/galeria/squirrel-8473819.webp" alt="Ardilla en una rama" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/face-1283106.webp" aria-label="Ampliar: Retrato en penumbra"><img src="img/galeria/face-1283106.webp" alt="Retrato en penumbra" width="800" height="533" loading="lazy" decoding="async"></button></li>
+      <li><button type="button" class="foto" data-grande="img/grande/men-1777352.webp" aria-label="Ampliar: Dos fotógrafos al atardecer"><img src="img/galeria/men-1777352.webp" alt="Dos fotógrafos al atardecer" width="800" height="533" loading="lazy" decoding="async"></button></li>
+    </ul>
+  </section>
+
+  <section class="sec" id="proyectos">
+    <div class="cab"><p class="pre">Series</p><h2>Proyectos</h2></div>
+    <ul class="series">
+      <li class="aparece"><img src="img/serie-1.webp" alt="Rana bajo una hoja en la lluvia" width="900" height="600" loading="lazy"><h3>Mira profundamente en la naturaleza</h3><p>Pequeños mundos que solo aparecen si te tomas tu tiempo para mirar.</p></li>
+      <li class="aparece"><img src="img/serie-2.webp" alt="Koala de cerca" width="900" height="600" loading="lazy"><h3>Simplemente vivir no es suficiente</h3><p>Instantes que recuerdan lo esencial: luz, formas y comportamiento natural.</p></li>
+      <li class="aparece"><img src="img/serie-3.webp" alt="Caballos galopando en la niebla" width="900" height="600" loading="lazy"><h3>Adopta el ritmo de la naturaleza</h3><p>El ritmo del viento, del agua y de la luz, donde el tiempo va más despacio.</p></li>
+      <li class="aparece"><img src="img/serie-4.webp" alt="Caballo blanco" width="900" height="600" loading="lazy"><h3>Déjate llevar por la naturaleza</h3><p>Paisajes casi de sueño para dejarse sorprender.</p></li>
+    </ul>
+  </section>
+
+  <section class="sec contacto" id="contacto">
+    <div class="contacto-txt aparece">
+      <p class="pre">Contacto</p>
+      <h2>¿Hablamos de tu <i>próximo viaje</i>?</h2>
+      <p>Para preguntas, colaboraciones o reservar una sesión. Te contesto lo antes posible.</p>
+      <p class="donde">Montequinto, Sevilla</p>
+    </div>
+    <form class="form aparece" novalidate>
+      <div class="campo"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
+      <div class="campo"><label for="f-correo">Email</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
+      <div class="campo ancho"><label for="f-asunto">Asunto</label><input id="f-asunto" name="asunto" required></div>
+      <div class="campo ancho"><label for="f-msg">Tu mensaje</label><textarea id="f-msg" name="mensaje" rows="5" required></textarea></div>
+      <button class="btn" type="submit">Enviar</button>
+      <p class="form-aviso" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<div class="visor" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <img alt="">
+  <p class="visor-pie"></p>
+  <button class="visor-cerrar" type="button" aria-label="Cerrar">×</button>
+  <button class="visor-ant" type="button" aria-label="Foto anterior">‹</button>
+  <button class="visor-sig" type="button" aria-label="Foto siguiente">›</button>
+</div>
+
+<footer class="pie">
+  <p><strong>Harry Photographer</strong> es un fotógrafo inventado: esta web es una demo.</p>
+  <p>Web hecha por <a href="https://portfolio.sahica.com/">Sara Hidalgo</a> · <a href="/proyectos/">Más demos</a></p>
+</footer>
+<script src="app.js?v=2611c" defer></script>
+</body>
+</html>

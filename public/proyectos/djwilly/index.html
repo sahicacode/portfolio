@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DJ Willy El Tuerto · Demo</title>
+<meta name="description" content="Demo de la web de un DJ de Sevilla: discotecas, festivales, bodas, bautizos y comuniones. Precios, próxima fiesta, galería y contacto. Web de prueba hecha por Sara Hidalgo.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#08060f">
+<link rel="icon" href="img/icono.svg" type="image/svg+xml">
+<link rel="preload" href="fuentes/anton.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="estilos.css?v=2611c">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div class="aviso-demo" role="note">Demo · negocio inventado · <a href="/proyectos/">ver más demos</a></div>
+
+<header class="nav">
+  <a class="marca" href="#inicio" aria-label="DJ Willy El Tuerto, inicio">
+    <img src="img/icono.svg" alt="" width="36" height="36"><span>DJ Willy</span>
+  </a>
+  <nav aria-label="Principal">
+    <a href="#servicios">Servicios</a>
+    <a href="#precios">Precios</a>
+    <a href="#fiesta">Próxima fiesta</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="btn btn-peq" href="#contacto">Contrátame</a>
+</header>
+
+<main id="contenido">
+  <section class="hero" id="inicio">
+    <img class="hero-foto" src="img/hero.webp" alt="" width="1536" height="1024" fetchpriority="high">
+    <div class="hero-luz" aria-hidden="true"></div>
+    <div class="hero-txt">
+      <p class="pre">Únete a la noche · Sevilla</p>
+      <h1><span>DJ Willy</span><span class="contorno">El Tuerto</span></h1>
+      <p class="lead">Pone ritmo a bodas, fiestas y festivales con pasión y una energía única. De la primera canción a la última, la pista no se vacía.</p>
+      <div class="ctas">
+        <button class="btn btn-musica" type="button" aria-pressed="false"><span class="ico-play" aria-hidden="true"></span><span class="txt">Pon la música</span></button>
+        <a class="btn btn-2" href="https://www.youtube.com/@arteconiastudio" target="_blank" rel="noopener">Escúchame en YouTube</a>
+      </div>
+    </div>
+    <div class="eq" aria-hidden="true"></div>
+  </section>
+
+  <div class="cinta" aria-hidden="true"><div>Discotecas ✦ Festivales ✦ Bodas ✦ Bautizos ✦ Comuniones ✦ </div><div>Discotecas ✦ Festivales ✦ Bodas ✦ Bautizos ✦ Comuniones ✦ </div></div>
+
+  <section class="sec" id="servicios">
+    <div class="cab"><p class="pre">Acerca de mí</p><h2>Una sesión para cada <em>noche</em></h2></div>
+    <ul class="servicios">
+      <li class="serv aparece">
+        <img src="img/servicio-discoteca.webp" alt="DJ pinchando vinilos" width="800" height="1000" loading="lazy">
+        <div><span class="num">01</span><h3>Discotecas</h3><p>Sesiones dinámicas pensadas para animar la pista toda la noche, hasta el amanecer.</p></div>
+      </li>
+      <li class="serv aparece">
+        <img src="img/servicio-festival.webp" alt="DJ con luces de neón detrás" width="800" height="1000" loading="lazy">
+        <div><span class="num">02</span><h3>Festivales</h3><p>Shows potentes para grandes escenarios y miles de personas, con efectos y repertorio a medida.</p></div>
+      </li>
+      <li class="serv aparece">
+        <img src="img/servicio-bodas.webp" alt="DJ con chaqueta azul pinchando en una boda" width="584" height="730" loading="lazy">
+        <div><span class="num">03</span><h3>Bodas, bautizos y comuniones</h3><p>Ambiente elegante y divertido, con la música adecuada para cada momento del día.</p></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="sec" id="precios">
+    <div class="cab"><p class="pre">Ofertas especiales</p><h2>Precios <em>claros</em></h2></div>
+    <ul class="precios">
+      <li class="precio aparece">
+        <h3>Discotecas</h3>
+        <p class="cifra"><span>250</span> €</p>
+        <ul><li>Equipo básico incluido</li><li>Sesión personalizada</li><li>Animación todo el evento</li></ul>
+        <a class="btn btn-2" href="#contacto">Lo quiero</a>
+      </li>
+      <li class="precio destacado aparece">
+        <span class="etiqueta">El más pedido</span>
+        <h3>Festivales</h3>
+        <p class="cifra"><span>500</span> €</p>
+        <ul><li>Show completo</li><li>Repertorio adaptado y efectos</li><li>Preparación previa</li></ul>
+        <a class="btn" href="#contacto">Lo quiero</a>
+      </li>
+      <li class="precio aparece">
+        <h3>Bodas, bautizos y comuniones</h3>
+        <p class="cifra"><span>350</span> €</p>
+        <ul><li>Sonorización completa</li><li>Música para cada momento</li><li>Trato personalizado</li></ul>
+        <a class="btn btn-2" href="#contacto">Lo quiero</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="fiesta" id="fiesta">
+    <div class="fiesta-in aparece">
+      <p class="pre">Únete al club · próximas fiestas</p>
+      <h2>Espectáculo en Sevilla</h2>
+      <p class="fechas"><span>6, 7 y 8 de diciembre</span><span>Puertas a las 23:00</span><span>Calle Goonie, 76 · Sevilla</span></p>
+      <div class="cuenta" data-fecha="2026-12-06T23:00:00+01:00" role="timer" aria-label="Cuenta atrás para la próxima fiesta">
+        <div><b data-u="d">--</b><span>días</span></div>
+        <div><b data-u="h">--</b><span>horas</span></div>
+        <div><b data-u="m">--</b><span>min</span></div>
+        <div><b data-u="s">--</b><span>seg</span></div>
+      </div>
+      <a class="btn" href="#contacto">Apúntame</a>
+    </div>
+  </section>
+
+  <section class="sec directo">
+    <div class="cab"><p class="pre">Mi música</p><h2>Escucha mi <em>último tema</em></h2></div>
+    <div class="video aparece">
+      <img src="img/youtube.webp" alt="" width="1280" height="720" loading="lazy">
+      <a class="video-play" href="https://www.youtube.com/watch?v=R0I9aV7Oat4" target="_blank" rel="noopener" data-yt="R0I9aV7Oat4" aria-label="Reproducir el vídeo de YouTube"><span class="ico-play" aria-hidden="true"></span></a>
+    </div>
+    <a class="canal aparece" href="https://www.youtube.com/@arteconiastudio" target="_blank" rel="noopener">
+      <span class="canal-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15V9l5.8 3-5.8 3Z"/></svg></span>
+      <span class="canal-txt"><b>@arteconiastudio</b><span>Más temas en mi canal de YouTube</span></span>
+      <span class="canal-ir" aria-hidden="true">Ver canal →</span>
+    </a>
+  </section>
+
+  <section class="sec" id="galeria">
+    <div class="cab"><p class="pre">Acerca de la última noche</p><h2>Galería</h2></div>
+    <ul class="galeria">
+      <li class="aparece"><img src="img/galeria-1.webp" alt="DJ en una sala con luz azul" width="900" height="600" loading="lazy"></li>
+      <li class="aparece alto"><img src="img/yo-1.webp" alt="Cabina del DJ con luces rojas y azules" width="746" height="933" loading="lazy"></li>
+      <li class="aparece"><img src="img/galeria-2.webp" alt="DJ con gorro en un evento al aire libre" width="900" height="600" loading="lazy"></li>
+      <li class="aparece"><img src="img/yo-2.webp" alt="Mesa de mezclas con luces moradas" width="584" height="438" loading="lazy"></li>
+      <li class="aparece alto"><img src="img/galeria-3.webp" alt="DJ mezclando con grafitis de colores detrás" width="746" height="933" loading="lazy"></li>
+      <li class="aparece"><img src="img/yo-3.webp" alt="DJ con gorra bajo luces moradas" width="584" height="650" loading="lazy"></li>
+      <li class="aparece"><img src="img/galeria-4.webp" alt="DJ de espaldas frente a una pista llena" width="900" height="600" loading="lazy"></li>
+      <li class="aparece"><img src="img/yo-4.webp" alt="Sesión en la calle con el portátil" width="584" height="438" loading="lazy"></li>
+    </ul>
+  </section>
+
+  <section class="sec opiniones">
+    <div class="cab"><p class="pre">Recomendaciones</p><h2>Lo que dice <em>la gente</em></h2></div>
+    <ul class="citas">
+      <li class="aparece"><blockquote>«Un DJ con muchísima energía: la pista se llenó desde el primer minuto. Profesional, puntual y con un sonido muy limpio. Lo volvería a contratar.»</blockquote><p>Allan Patrick · músico</p></li>
+      <li class="aparece"><blockquote>«Hizo que nuestra boda fuera inolvidable. Supo leer a la gente en cada momento y nos trató genial.»</blockquote><p>Jennifer Aster · artista de baile</p></li>
+    </ul>
+  </section>
+
+  <section class="sec contacto" id="contacto">
+    <div class="contacto-txt aparece">
+      <p class="pre">Contáctame aquí</p>
+      <h2>¿Montamos tu <em>fiesta</em>?</h2>
+      <p>Cuéntame qué celebras, cuándo y dónde. Te respondo con disponibilidad y precio cerrado.</p>
+      <p class="donde">Sevilla y alrededores</p>
+    </div>
+    <form class="form aparece" novalidate>
+      <div class="campo"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
+      <div class="campo"><label for="f-correo">Correo</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
+      <div class="campo"><label for="f-tipo">Tipo de evento</label>
+        <select id="f-tipo" name="tipo"><option>Discoteca</option><option>Festival</option><option>Boda, bautizo o comunión</option><option>Otro</option></select></div>
+      <div class="campo"><label for="f-fecha">Fecha</label><input id="f-fecha" name="fecha" type="date"></div>
+      <div class="campo ancho"><label for="f-msg">Mensaje</label><textarea id="f-msg" name="mensaje" rows="4"></textarea></div>
+      <button class="btn" type="submit">Enviar</button>
+      <p class="form-aviso" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="pie">
+  <p><strong>DJ Willy El Tuerto</strong> es un DJ inventado: esta web es una demo.</p>
+  <p>Música en <a href="https://www.youtube.com/@arteconiastudio" target="_blank" rel="noopener">youtube.com/@arteconiastudio</a></p>
+  <p>Web hecha por <a href="https://portfolio.sahica.com/">Sara Hidalgo</a> · <a href="/proyectos/">Más demos</a></p>
+</footer>
+<script src="app.js?v=2611c" defer></script>
+</body>
+</html>

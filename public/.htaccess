@@ -1,0 +1,40 @@
+# Hostinger (Apache): HTTPS, páginas de error y cabeceras de seguridad
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404.html
+
+# Páginas del portfolio antiguo: las mando a su sección en la web nueva
+RewriteRule ^proyectos\.html$ /#work [R=301,NE,L]
+RewriteRule ^aboutme\.html$ /#about [R=301,NE,L]
+RewriteRule ^contacto\.html$ /#contact [R=301,NE,L]
+RewriteRule ^docs/CV-Sara-Hidalgo-Caro\.pdf$ /cv/Sara-Hidalgo-Caro-CV.pdf [R=301,L]
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.youtube-nocookie.com; media-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+</IfModule>
+
+# Caché larga para los archivos de Next.js (llevan un hash en el nombre)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+# Comprimir texto (HTML, CSS, JS) para que cargue más rápido
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+# El CV se descarga en vez de abrirse en el navegador
+<FilesMatch "\.pdf$">
+  Header set Content-Disposition "attachment; filename=Sara-Hidalgo-Caro-CV.pdf"
+</FilesMatch>

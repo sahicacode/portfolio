@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pizzería Demogorgon · Demo</title>
+<meta name="description" content="Demo de una pizzería temática de los años 80: carta con entrantes, 14 pizzas y postres. Web de prueba hecha por Sara Hidalgo.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#07080c">
+<link rel="icon" href="img/logo.webp">
+<link rel="preload" href="fuentes/fraunces-900-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="estilos.css?v=2611c">
+</head>
+<body>
+<a class="saltar" href="#carta">Saltar a la carta</a>
+<div class="aviso-demo" role="note">Demo · negocio inventado · <a href="/proyectos/">ver más demos</a></div>
+
+<header class="nav">
+  <a class="marca" href="#inicio"><img src="img/logo.webp" alt="" width="40" height="40"><span>Demogorgon</span></a>
+  <nav aria-label="Principal">
+    <a href="#especiales">Especiales</a>
+    <a href="#carta">Carta</a>
+    <a href="#casa">La casa</a>
+  </nav>
+  <button class="reves" type="button" aria-pressed="false" title="Pasar al revés"><span class="reves-ico" aria-hidden="true">⇅</span><span class="reves-txt">El revés</span></button>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <canvas class="esporas" aria-hidden="true"></canvas>
+    <ul class="luces" aria-hidden="true"><li style="--i:0"></li><li style="--i:1"></li><li style="--i:2"></li><li style="--i:3"></li><li style="--i:4"></li><li style="--i:5"></li><li style="--i:6"></li><li style="--i:7"></li><li style="--i:8"></li><li style="--i:9"></li><li style="--i:10"></li><li style="--i:11"></li><li style="--i:12"></li><li style="--i:13"></li><li style="--i:14"></li><li style="--i:15"></li></ul>
+    <div class="hero-txt">
+      <p class="pre">Hawkins · desde 1983 · pizzería friki</p>
+      <h1><span class="neon">Pizzería</span><span class="neon neon-2">Demogorgon</span></h1>
+      <p class="lead">Pizzas con nombre de personaje, nachos negros como El Revés y gofres para Eleven. Si eres tan friki como nosotros, tienes que venir.</p>
+      <div class="ctas"><a class="btn" href="#carta">Ver la carta</a><a class="btn btn-2" href="#especiales">Pizzas especiales</a></div>
+    </div>
+    <div class="hero-pizza"><img src="img/demogorgon-grande.webp" alt="Pizza Demogorgon recién salida del horno" width="900" height="900" fetchpriority="high"></div>
+  </section>
+
+  <div class="cinta" aria-hidden="true"><div>Pizza Eleven · Pizza Dustin · Go-fres de Eleven · Nachos El Revés · Mind Flayer XXL · Pizza Vecna · </div><div>Pizza Eleven · Pizza Dustin · Go-fres de Eleven · Nachos El Revés · Mind Flayer XXL · Pizza Vecna · </div></div>
+
+  <section class="sec" id="especiales">
+    <div class="sec-cab"><span class="pre">Encuentra las mejores</span><h2>Pizzas especiales</h2></div>
+    <ul class="especiales">
+      <li class="esp" style="--i:0">
+        <div class="esp-img"><img src="img/vecna.webp" alt="Pizza Vecna" width="960" height="640" loading="lazy" decoding="async"></div>
+        <div class="esp-txt"><span class="chip">Especial</span><h3>Pizza Vecna</h3><p>La más picante de la casa.</p><span class="precio">15,95 €</span></div>
+      </li>
+      <li class="esp" style="--i:1">
+        <div class="esp-img"><img src="img/max.webp" alt="Pizza Max" width="960" height="640" loading="lazy" decoding="async"></div>
+        <div class="esp-txt"><span class="chip">Especial</span><h3>Pizza Max</h3><p>Verduras de colores y mucha mozzarella.</p><span class="precio">14,95 €</span></div>
+      </li>
+      <li class="esp" style="--i:2">
+        <div class="esp-img"><img src="img/upside-down.webp" alt="Pizza Upside Down" width="960" height="640" loading="lazy" decoding="async"></div>
+        <div class="esp-txt"><span class="chip">Especial</span><h3>Pizza Upside Down</h3><p>Masa negra para los valientes.</p><span class="precio">13,95 €</span></div>
+      </li>
+      <li class="esp" style="--i:3">
+        <div class="esp-img"><img src="img/demogorgon.webp" alt="Pizza Demogorgon" width="960" height="640" loading="lazy" decoding="async"></div>
+        <div class="esp-txt"><span class="chip">Especial</span><h3>Pizza Demogorgon</h3><p>La que da nombre a la casa.</p><span class="precio">13,95 €</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="postre">
+    <div class="postre-img"><img src="img/gofres-eleven.webp" alt="Go-fres de Eleven con helado y caramelo" width="960" height="640" loading="lazy"></div>
+    <div class="postre-txt">
+      <span class="pre">Top postre</span>
+      <h2>Go-fres de Eleven</h2>
+      <p>Mini gofres con helado de vainilla, caramelo líquido y virutas de chocolate. El postre favorito de la casa, y también de Eleven.</p>
+      <span class="precio grande">3,95 €</span>
+    </div>
+  </section>
+
+  <section class="sec" id="carta">
+    <div class="sec-cab"><span class="pre">Toda la carta</span><h2>Menú de Hawkins</h2></div>
+    <div class="pestanas" role="tablist" aria-label="Partes de la carta">
+      <button role="tab" id="t-pizzas" aria-controls="p-pizzas" aria-selected="true">Pizzas</button>
+      <button role="tab" id="t-entrantes" aria-controls="p-entrantes" aria-selected="false" tabindex="-1">Entrantes</button>
+      <button role="tab" id="t-postres" aria-controls="p-postres" aria-selected="false" tabindex="-1">Postres</button>
+    </div>
+    <div class="panel" role="tabpanel" id="p-pizzas" aria-labelledby="t-pizzas"><h3 class="oculto">Pizzas</h3><ul class="platos">
+        <li class="plato">
+          <img src="img/demogorgon.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Demogorgon</h4><span class="precio">13,95 €</span></div><p>Tomate, mozzarella, pepperoni, carne picada y aceite de guindilla.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/eleven.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Eleven</h4><span class="precio">13,95 €</span></div><p>Mozzarella, bacon, huevo, sirope dulce y crujiente de gofre.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/mike.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Mike</h4><span class="precio">13,95 €</span></div><p>Mozzarella, gorgonzola, emmental, parmesano y orégano.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/dustin.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Dustin</h4><span class="precio">13,95 €</span></div><p>Pepperoni, piña caramelizada, jalapeños, mezcla de quesos y miel.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/lucas.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Lucas</h4><span class="precio">10,95 €</span></div><p>Carne picada especiada, jalapeños, cheddar, maíz y salsa suave picante.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/vecna.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Vecna</h4><span class="precio">15,95 €</span></div><p>Tomate picante, chorizo, mozzarella tostada, champiñón negro y aceite de guindilla.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/max.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Max</h4><span class="precio">14,95 €</span></div><p>Pimiento rojo, tomate cherry, champiñón, aceitunas negras y mozzarella.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/steve.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Steve</h4><span class="precio">13,95 €</span></div><p>Trufa, jamón serrano, rúcula, parmesano y aceite de trufa.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/billy.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Billy</h4><span class="precio">13,95 €</span></div><p>Tomate picante, pepperoni extra, jalapeños, aceite de guindilla y cebolla morada.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/upside-down.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Upside Down</h4><span class="precio">13,95 €</span></div><p>Masa negra de carbón, mozzarella, pepperoni, aceitunas negras y toques rojos.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/will.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Will</h4><span class="precio">9,95 €</span></div><p>Tomate, mozzarella fresca, albahaca y aceite de oliva virgen extra.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/hawkins.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Hawkins</h4><span class="precio">11,95 €</span></div><p>Pepperoni, bacon, mozzarella y salsa de tomate de siempre.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/surfer-boy.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Surfer Boy</h4><span class="precio">13,95 €</span></div><p>Mozzarella, jamón york, piña y un toque dulce.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/mind-flayer.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Mind Flayer XXL</h4><span class="precio">16,95 €</span></div><p>Mezcla de carnes, salsa picante, cebolla, queso extra y borde relleno.</p></div>
+        </li>
+    </ul></div>
+    <div class="panel" role="tabpanel" id="p-entrantes" aria-labelledby="t-entrantes" hidden><h3 class="oculto">Entrantes</h3><ul class="platos">
+        <li class="plato">
+          <img src="img/aros-portal.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Aros de cebolla «Portal»</h4><span class="precio">3,95 €</span></div><p>Aros de cebolla rebozados y crujientes, salsa suave picante y un hilo de coulis rojo.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/nachos-reves.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Nachos «El Revés»</h4><span class="precio">3,95 €</span></div><p>Nachos negros de carbón, cheddar rojo, pico de gallo oscuro, nata agria, guacamole y jalapeños.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/fingers-vecna.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Fingers de pollo «Vecna Crunch»</h4><span class="precio">4,95 €</span></div><p>Pollo crujiente con rebozado rojo picante, salsa barbacoa ahumada y pimienta negra.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/patatas-hawkins.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Patatas «Hawkins High»</h4><span class="precio">3,95 €</span></div><p>Patatas gajo con bacon, cheddar, cebollino y salsa ranchera.</p></div>
+        </li>
+    </ul></div>
+    <div class="panel" role="tabpanel" id="p-postres" aria-labelledby="t-postres" hidden><h3 class="oculto">Postres</h3><ul class="platos">
+        <li class="plato">
+          <img src="img/gofres-eleven.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Go-fres de Eleven</h4><span class="precio">3,95 €</span></div><p>Mini gofres con helado de vainilla, caramelo líquido y virutas de chocolate.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/crepe-tentaculo.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Crepe «Tentáculo del Revés»</h4><span class="precio">3,95 €</span></div><p>Crepe con chocolate negro, coulis de frutos rojos y crumble oscuro.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/cookie-hawkins.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Cookie gigante «Hawkins Middle School»</h4><span class="precio">4,95 €</span></div><p>Galleta enorme con pepitas de chocolate y Lacasitos rojos.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/brownie-azotamentes.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Brownie «Sombra del Azotamentes»</h4><span class="precio">3,95 €</span></div><p>Brownie de chocolate con cacao negro, chocolate amargo y coulis rojo.</p></div>
+        </li>
+        <li class="plato">
+          <img src="img/helado-walkie.webp" alt="" width="480" height="320" loading="lazy" decoding="async">
+          <div><div class="plato-cab"><h4>Helado «Walkie-Talkie»</h4><span class="precio">3,95 €</span></div><p>Helado en barra con cobertura de chocolate y botones de caramelo.</p></div>
+        </li>
+    </ul></div>
+  </section>
+
+  <section class="sec casa" id="casa">
+    <div class="casa-txt">
+      <span class="pre">Sobre la casa</span>
+      <h2>Una pizzería con la temática de los 80</h2>
+      <p>Luces de colores, walkie-talkies, recreativas y pizzas con nombre de personaje. Venimos de ver la serie demasiadas veces y montamos el sitio en el que nos habría gustado cenar.</p>
+      <dl class="horario">
+        <div><dt>Lunes a sábado</dt><dd>12:00 – 16:00 · 20:00 – 24:00</dd></div>
+        <div><dt>Domingo</dt><dd>Cerrado</dd></div>
+      </dl>
+      <a class="btn" href="#carta">Ver la carta</a>
+    </div>
+    <div class="casa-fotos">
+      <img src="img/por-dentro.webp" alt="La pizzería por dentro" width="960" height="640" loading="lazy">
+      <img src="img/por-fuera.webp" alt="La pizzería por fuera" width="960" height="640" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <p><strong>Pizzería Demogorgon</strong> es un negocio inventado: esta web es una demo.</p>
+  <p>Web hecha por <a href="https://portfolio.sahica.com/">Sara Hidalgo</a> · <a href="/proyectos/">Más demos</a></p>
+</footer>
+<script src="app.js?v=2611c" defer></script>
+</body>
+</html>

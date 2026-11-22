@@ -1,0 +1,29 @@
+name: Capturas de proyectos
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [nuevo-portfolio]
+    paths: ['scripts/capturas.mjs']
+
+permissions:
+  contents: write
+
+jobs:
+  capturas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-save playwright@1.47.2 sharp@0.33.5
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/capturas.mjs
+      - name: Guardar capturas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/proyectos
+          git commit -m "Capturas de los proyectos" || echo "Sin cambios"
+          git push

@@ -70,24 +70,6 @@ export const proyectos: Proyecto[] = [
 // Más proyectos y demos
 export const otrosProyectos: Proyecto[] = [
   {
-    nombre: "Choresia",
-    url: "https://choresia.sahica.com",
-    imagen: "/proyectos/choresia-app.webp",
-    etiqueta: "Web app · 2025",
-    descripcion:
-      "Household chores as a game. Create a home, share tasks, earn points and see the daily ranking.",
-    tecnologias: ["Laravel", "Inertia", "React", "Tailwind"],
-  },
-  {
-    nombre: "NovaBank",
-    url: "https://novabank-prestamos.vercel.app",
-    imagen: "/proyectos/novabank-panel.webp",
-    etiqueta: "Full-stack app · 2025",
-    descripcion:
-      "A loan manager for people and businesses: clients, instalment calculations, reports and Excel export, behind a login.",
-    tecnologias: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-  },
-  {
     nombre: "Pizzería Demogorgon",
     url: "/proyectos/pizzeria/",
     imagen: "/proyectos/pizzeria-demo.webp",

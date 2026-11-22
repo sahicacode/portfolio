@@ -1,0 +1,22 @@
+Fuentes de originales2 (Jurassic Film). Fotos = fotograma extraído con ffmpeg de un clip de Mixkit (licencia gratuita de Mixkit, sin atribución obligatoria).
+
+tira-aventura.jpg <- https://assets.mixkit.co/videos/12987/12987-720.mp4 (Mixkit, clip 12987)
+tira-salvaje.jpg <- https://assets.mixkit.co/videos/4071/4071-1080.mp4 (Mixkit, clip 4071)
+tira-exterior.jpg <- https://assets.mixkit.co/videos/4075/4075-1080.mp4 (Mixkit, clip 4075)
+tira-extremo.jpg <- https://assets.mixkit.co/videos/43300/43300-1080.mp4 (Mixkit, clip 43300)
+tira-cascada.jpg <- https://assets.mixkit.co/videos/25542/25542-1080.mp4 (Mixkit, clip 25542)
+tira-creativo.jpg <- https://assets.mixkit.co/videos/44069/44069-1080.mp4 (Mixkit, clip 44069)
+tira-cine.jpg <- https://assets.mixkit.co/videos/46353/46353-720.mp4 (Mixkit, clip 46353)
+escena-videoclip.jpg <- https://assets.mixkit.co/videos/478/478-1080.mp4 (Mixkit, clip 478)
+escena-documental.jpg <- https://assets.mixkit.co/videos/18708/18708-720.mp4 (Mixkit, clip 18708)
+escena-viaje.jpg <- https://assets.mixkit.co/videos/43161/43161-1080.mp4 (Mixkit, clip 43161)
+escena-branding.jpg <- https://assets.mixkit.co/videos/817/817-1080.mp4 (Mixkit, clip 817)
+escena-redes.jpg <- https://assets.mixkit.co/videos/41269/41269-1080.mp4 (Mixkit, clip 41269)
+fondo-historias.mp4 <- https://assets.mixkit.co/videos/22994/22994-720.mp4 (Mixkit: Crew working on a film at warehouse)
+fondo-lema.mp4 <- https://assets.mixkit.co/videos/4396/4396-720.mp4 (Mixkit: Fog on the heights of the snowy mountains)
+
+Vídeos del canal de YouTube de Sara (solo vídeo, 720p, con yt-dlp):
+yt-1.mp4 <- https://www.youtube.com/watch?v=-jytbqFtJqI ; yt-1.jpg <- https://i.ytimg.com/vi/-jytbqFtJqI/maxresdefault.jpg
+yt-2.mp4 <- https://www.youtube.com/watch?v=Z42SaXDUQQ0 ; yt-2.jpg <- https://i.ytimg.com/vi/Z42SaXDUQQ0/maxresdefault.jpg
+yt-3.mp4 <- https://www.youtube.com/watch?v=Hs_FeDJc0gg ; yt-3.jpg <- https://i.ytimg.com/vi/Hs_FeDJc0gg/maxresdefault.jpg
+frames/yt-N-frame-1..8.jpg <- 8 fotogramas repartidos a lo largo de cada yt-N.mp4

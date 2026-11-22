@@ -37,6 +37,11 @@ export default function Projects() {
           </li>
         ))}
       </ul>
+      <div className="more-all">
+        <a className="btn" href="/proyectos/">
+          See more demos <span aria-hidden="true">→</span>
+        </a>
+      </div>
 
       <div className="github mono">
         <span>Code and experiments on GitHub</span>

@@ -89,11 +89,11 @@ export const otrosProyectos: Proyecto[] = [
   },
   {
     nombre: "Pizzería Demogorgon",
-    url: "https://pizzeriademogorgon.sahica.com",
-    imagen: "/proyectos/pizzeria.webp",
-    etiqueta: "WordPress demo",
-    descripcion: "Themed pizzeria website with a menu inspired by a TV series.",
-    tecnologias: ["WordPress"],
+    url: "/proyectos/pizzeria/",
+    imagen: "/proyectos/pizzeria-demo.webp",
+    etiqueta: "Demo site · 2026",
+    descripcion: "Themed 80s pizzeria: full menu with tabs, neon titles and an «upside down» mode with floating spores.",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
   },
   {
     nombre: "DJ Willy El Tuerto",

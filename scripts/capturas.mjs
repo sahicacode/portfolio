@@ -4,7 +4,7 @@ import { chromium } from 'playwright';
 import sharp from 'sharp';
 import fs from 'node:fs';
 
-// Choresia y NovaBank piden login: sus capturas las hago yo a mano
+// Choresia y NovaBank piden login, y las demos de /proyectos/ están en este mismo repo: sus capturas se hacen a mano
 const webs = [
   ['sahica-web', 'https://sahica.com/'],
   ['reformas', 'https://reformas.sahica.com/'],
@@ -12,7 +12,6 @@ const webs = [
   ['conquistasevilla', 'https://conquistasevilla.com/'],
   ['atmosferadev', 'https://atmosferadev.sahica.com/'],
   ['licenciasunavez', 'https://licenciasunavez.sahica.com/'],
-  ['pizzeria', 'https://pizzeriademogorgon.sahica.com/'],
   ['djwilly', 'https://djwillyeltuerto.sahica.com/'],
   ['harryphotographer', 'https://harryphotographer.sahica.com/'],
 ];

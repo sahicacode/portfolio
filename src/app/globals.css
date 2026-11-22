@@ -1313,3 +1313,59 @@ footer .wrap {
     scroll-behavior: auto;
   }
 }
+
+/* Página de cookies */
+.legal {
+  max-width: 760px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.legal h1 {
+  font-family: var(--titulos);
+  font-size: var(--fs-h2);
+  line-height: 1.1;
+}
+.legal p {
+  color: var(--muted);
+}
+.legal a:not(.btn) {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.legal .btn {
+  color: var(--fg);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+.legal .btn.primary {
+  color: #06121f;
+  background: var(--blue);
+}
+.legal .tabla {
+  overflow-x: auto;
+}
+.legal table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 480px;
+  font-size: var(--fs-small);
+}
+.legal th,
+.legal td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.legal th {
+  color: var(--fg);
+}
+footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

@@ -1,66 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-    <title>Codemetry IT Consulting</title>
-    <meta name="description" content="Codemetry IT Consulting es una consultora tecnológica especializada en diseño de soluciones digitales, infraestructura cloud, desarrollo de software a medida y ciberseguridad. Nuestro enfoque combina precisión técnica y visión estratégica, ayudando a empresas a evolucionar tecnológicamente con rapidez, seguridad y eficiencia.">
-    <meta name="author" content="Sara Hidalgo Caro">
-    <meta property="og:image" content="https://portfolio.losjipis.com/img/sara-hidalgo-caro.webp">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codemetry IT Consulting · Consultora tecnológica en Sevilla</title>
+<meta name="description" content="Codemetry IT Consulting es una consultora tecnológica de Sevilla: desarrollo a medida, infraestructura cloud, ciberseguridad, transformación digital y soporte. Empresa inventada para una demo.">
+<meta name="author" content="Sara Hidalgo Caro">
+<meta name="theme-color" content="#0b1730">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preload" href="/proyectos/fuentes/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="estilos.css?v=2611e">
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a class="navbar-logo" href="index.html">
-                    <img id="logo" src="img/logo.webp" alt="Logo Codemetry">
-                </a>
-            </div>
-            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-            <nav class="nav" id="menu">
-                <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="services.html">Nuestros servicios</a></li>
-                    <li><a href="aboutus.html">Sobre nosotros</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<p class="aviso-demo">Empresa inventada · web de demostración hecha por Sara Hidalgo</p>
+<header class="nav">
+  <div class="nav-in">
+    <a class="marca" href="index.html" aria-label="Codemetry, inicio"><svg class="icono" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2 43 13v22L24 46 5 35V13z" fill="#0f2342"/><g fill="none" stroke="#7fe0b0" stroke-width="2.4" stroke-linecap="round"><path d="M24 36V20M24 28l-6-6M24 25l7-7"/></g><g fill="#7fe0b0"><circle cx="24" cy="17" r="2.6"/><circle cx="16.5" cy="20.5" r="2.6"/><circle cx="32.5" cy="16.5" r="2.6"/></g></svg><span><b>Codemetry</b><small>IT Consulting</small></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span class="menu-ico" aria-hidden="true"></span><span class="sr">Menú</span></button>
+    <nav id="menu" aria-label="Principal"><ul><li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="services.html">Servicios</a></li><li><a href="aboutus.html">Sobre nosotros</a></li><li><a href="contact.html">Contacto</a></li></ul><a class="btn btn-peq" href="contact.html">Hablemos</a></nav>
+  </div>
+</header>
+<main id="contenido">
 
-    <div class="card">
-        <h1>Codemetry IT Consulting</h1>
-        <p>Codemetry IT Consulting es una <span class="consultora">consultora tecnológica</span> especializada en diseño de soluciones digitales, infraestructura cloud, desarrollo de software a medida y ciberseguridad. Nuestro enfoque combina precisión técnica y visión estratégica, ayudando a empresas a evolucionar tecnológicamente con rapidez, seguridad y eficiencia.</p>
-        <img src="img/office.webp" class="card-img" alt="Oficina Codemetry">
+<section class="hero">
+  <div class="hero-in">
+    <div class="hero-txt">
+      <p class="pre"><span class="punto" aria-hidden="true"></span>Consultora tecnológica · Sevilla</p>
+      <h1>Tecnología que hace <em>crecer</em> tu empresa.</h1>
+      <p class="lead">Codemetry es una consultora tecnológica especializada en soluciones digitales, infraestructura cloud, desarrollo a medida y ciberseguridad. Unimos precisión técnica y visión de negocio para que evoluciones con rapidez, seguridad y eficiencia.</p>
+      <div class="ctas"><a class="btn" href="services.html">Ver servicios <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-2" href="contact.html">Hablemos</a></div>
     </div>
+    <div class="consola" aria-hidden="true">
+      <div class="consola-bar"><i></i><i></i><i></i><span>codemetry ~ estado</span></div>
+      <ol class="consola-lineas">
+        <li data-t="$ diagnostico --empresa tu-negocio"></li>
+        <li data-t="✓ 12 sistemas revisados" class="ok"></li>
+        <li data-t="$ migrar --a cloud --sin-cortes"></li>
+        <li data-t="✓ servidores en la nube" class="ok"></li>
+        <li data-t="$ seguridad --auditoria completa"></li>
+        <li data-t="✓ 0 vulnerabilidades críticas" class="ok"></li>
+        <li data-t="$ soporte --activar 24/7"></li>
+        <li data-t="● todo en marcha" class="vivo"></li>
+      </ol>
+    </div>
+  </div>
+  <ul class="cinta" aria-label="Áreas"><li>Desarrollo a medida</li><li>Cloud</li><li>Ciberseguridad</li><li>Transformación digital</li><li>Soporte IT</li></ul>
+</section>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Codemetry IT Consulting</h4>
-                <p>© 2025. Todos los derechos reservados.</p>
-                <p>Web hecha por Sara Hidalgo</p>
-            </div>
-            <div class="footer-section">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="services.html">Servicios</a></li>
-                    <li><a href="aboutus.html">Sobre nosotros</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contacto</h4>
-                <p>Email: contacto@codemetry.com</p>
-                <p>Tel: +34 665 487 297</p>
-                <p>Sevilla, España</p>
-            </div>
-        </div>
-    </footer>
-    <script src="menu.js"></script>
-    <button id="scrollToTop" title="Volver arriba">↑</button>
+<section class="sec">
+  <div class="cab aparece"><p class="pre">Qué hacemos</p><h2>Cinco áreas, un solo equipo.</h2><p>Todo lo que tu empresa necesita en tecnología, sin tener que coordinar a varios proveedores.</p></div>
+  <ul class="servicios-mini"><li class="aparece"><a href="services.html#desarrollo"><img src="img/desarrollo.webp" alt="" width="1000" height="667" loading="lazy"><span class="num">01</span><h3>Desarrollo a medida</h3><p>Aplicaciones web y móviles, APIs y automatizaciones.</p><span class="mas">Ver más <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li><li class="aparece"><a href="services.html#cloud"><img src="img/cloud.webp" alt="" width="1000" height="667" loading="lazy"><span class="num">02</span><h3>Infraestructura cloud</h3><p>Migración a AWS, Azure o GCP.</p><span class="mas">Ver más <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li><li class="aparece"><a href="services.html#ciberseguridad"><img src="img/ciberseguridad.webp" alt="" width="1000" height="667" loading="lazy"><span class="num">03</span><h3>Ciberseguridad</h3><p>Análisis de vulnerabilidades, pentesting y cumplimiento normativo.</p><span class="mas">Ver más <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li><li class="aparece"><a href="services.html#digital"><img src="img/digital.webp" alt="" width="1000" height="667" loading="lazy"><span class="num">04</span><h3>Transformación digital</h3><p>Automatización de procesos y modernización de sistemas.</p><span class="mas">Ver más <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li><li class="aparece"><a href="services.html#soporte"><img src="img/soporte.webp" alt="" width="1000" height="667" loading="lazy"><span class="num">05</span><h3>Soporte técnico empresarial</h3><p>Gestión de redes, servidores y soporte remoto.</p><span class="mas">Ver más <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li></ul>
+</section>
+
+<section class="sec sec-oscura">
+  <div class="cab aparece"><p class="pre">Cómo trabajamos</p><h2>De la idea a algo que funciona.</h2></div>
+  <ol class="pasos"><li class="aparece"><span>01</span><h3>Diagnóstico</h3><p>Escuchamos, revisamos tus sistemas y detectamos qué frena a tu empresa.</p></li><li class="aparece"><span>02</span><h3>Plan</h3><p>Te proponemos una hoja de ruta clara, por fases y con prioridades.</p></li><li class="aparece"><span>03</span><h3>Ejecución</h3><p>Desarrollamos, migramos y protegemos sin parar tu día a día.</p></li><li class="aparece"><span>04</span><h3>Acompañamiento</h3><p>Medimos, mantenemos y mejoramos de forma continua.</p></li></ol>
+</section>
+
+<section class="sec oficina">
+  <figure class="aparece"><img src="img/office.webp" alt="Oficina de Codemetry con puestos de trabajo y plantas" width="1500" height="625" loading="lazy"></figure>
+  <div class="oficina-txt aparece">
+    <p class="pre">Nuestra casa</p>
+    <h2>Un equipo cercano, en Sevilla.</h2>
+    <p>Ocho personas que dominan cada pieza: desarrollo, sistemas, seguridad, soporte y marketing. Puedes venir a vernos o lo hacemos todo en remoto.</p>
+    <a class="enlace" href="aboutus.html">Conoce al equipo <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+<section class="cta-banda">
+  <div class="cta-in aparece">
+    <div><p class="pre">¿Empezamos?</p><h2>Cuéntanos tu reto y te proponemos un plan.</h2></div>
+    <a class="btn btn-claro" href="contact.html">Hablemos <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+</main>
+<footer class="pie">
+  <div class="pie-in">
+    <div class="pie-marca">
+      <a class="marca" href="index.html"><svg class="icono" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2 43 13v22L24 46 5 35V13z" fill="#0f2342"/><g fill="none" stroke="#7fe0b0" stroke-width="2.4" stroke-linecap="round"><path d="M24 36V20M24 28l-6-6M24 25l7-7"/></g><g fill="#7fe0b0"><circle cx="24" cy="17" r="2.6"/><circle cx="16.5" cy="20.5" r="2.6"/><circle cx="32.5" cy="16.5" r="2.6"/></g></svg><span><b>Codemetry</b><small>IT Consulting</small></span></a>
+      <p>Consultora tecnológica en Sevilla. Desarrollo, cloud, ciberseguridad y soporte para empresas.</p>
+    </div>
+    <div><h2>Páginas</h2><ul><li><a href="index.html">Inicio</a></li><li><a href="services.html">Servicios</a></li><li><a href="aboutus.html">Sobre nosotros</a></li><li><a href="contact.html">Contacto</a></li></ul></div>
+    <div><h2>Contacto</h2><ul><li><a href="mailto:contacto@codemetry.com">contacto@codemetry.com</a></li><li><a href="tel:+34665487297">+34 665 487 297</a></li><li>Sevilla, España</li></ul></div>
+  </div>
+  <div class="pie-bajo"><p>© 2026 Codemetry IT Consulting. Empresa inventada para una demo.</p><p>Web hecha por <a href="https://portfolio.sahica.com/">Sara Hidalgo</a> · <a href="/proyectos/">Más demos</a></p></div>
+</footer>
+<button class="arriba" type="button" aria-label="Volver arriba"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<script src="app.js?v=2611e" defer></script>
 </body>
 </html>

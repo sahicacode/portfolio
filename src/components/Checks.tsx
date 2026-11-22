@@ -1,6 +1,6 @@
-// Notas de Lighthouse de esta web, medidas en móvil (actualizar después de cada cambio grande)
+// Notas de Lighthouse (PageSpeed) de esta web, medidas el 22/11/2026 (actualizar después de cada cambio grande)
 const notas = [
-  { nombre: "Performance", valor: 95, texto: "Static export, WebP images, fonts served locally" },
+  { nombre: "Performance", valor: 100, texto: "Static export, WebP images, fonts served locally" },
   { nombre: "Accessibility", valor: 100, texto: "Keyboard, contrast and screen reader checked" },
   { nombre: "Best practices", valor: 100, texto: "HTTPS, clean console and modern code" },
   { nombre: "SEO", valor: 100, texto: "Metadata, Open Graph and sitemap" },

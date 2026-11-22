@@ -12,8 +12,6 @@ const webs = [
   ['conquistasevilla', 'https://conquistasevilla.com/'],
   ['atmosferadev', 'https://atmosferadev.sahica.com/'],
   ['licenciasunavez', 'https://licenciasunavez.sahica.com/'],
-  ['djwilly', 'https://djwillyeltuerto.sahica.com/'],
-  ['harryphotographer', 'https://harryphotographer.sahica.com/'],
 ];
 
 fs.mkdirSync('public/proyectos', { recursive: true });

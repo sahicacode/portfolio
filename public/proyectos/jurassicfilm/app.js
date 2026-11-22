@@ -19,13 +19,6 @@
   }
   if (!quieto) tic();
 
-  // Vídeo del vlog
-  var caja = document.querySelector('.video');
-  if (caja) {
-    var v = caja.querySelector('video');
-    caja.querySelector('.video-play').addEventListener('click', function () { v.preload = 'auto'; v.controls = true; v.play(); caja.classList.add('sonando'); });
-  }
-
   // Vídeos de fondo: aparecen al llegar a su sección y se paran al salir
   var fondos = document.querySelectorAll('.con-video');
   if ('IntersectionObserver' in window && !quieto) {

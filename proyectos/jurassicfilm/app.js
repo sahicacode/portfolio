@@ -26,6 +26,19 @@
     caja.querySelector('.video-play').addEventListener('click', function () { v.preload = 'auto'; v.controls = true; v.play(); caja.classList.add('sonando'); });
   }
 
+  // Vídeos de fondo: aparecen al llegar a su sección y se paran al salir
+  var fondos = document.querySelectorAll('.con-video');
+  if ('IntersectionObserver' in window && !quieto) {
+    var iov = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var v = e.target.querySelector('.fondo-video');
+        if (e.isIntersecting) { v.preload = 'auto'; var pr = v.play(); if (pr) pr.catch(function () {}); e.target.classList.add('activo'); }
+        else { v.pause(); e.target.classList.remove('activo'); }
+      });
+    }, { threshold: .2 });
+    [].forEach.call(fondos, function (f) { iov.observe(f); });
+  }
+
   // Formulario de prueba
   var form = document.querySelector('.form');
   form.addEventListener('submit', function (e) {

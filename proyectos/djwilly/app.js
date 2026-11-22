@@ -67,8 +67,18 @@
   // Vídeo
   var caja = document.querySelector('.video');
   if (caja) {
-    var v = caja.querySelector('video');
-    caja.querySelector('.video-play').addEventListener('click', function () { v.preload = 'auto'; v.controls = true; v.play(); caja.classList.add('sonando'); });
+    var play = caja.querySelector('.video-play');
+    play.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (boton.getAttribute('aria-pressed') === 'true') boton.click();
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + play.dataset.yt + '?autoplay=1&rel=0';
+      f.title = 'Vídeo de YouTube';
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      caja.appendChild(f);
+      caja.classList.add('sonando');
+    });
   }
 
   // Formulario de prueba

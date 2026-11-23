@@ -34,7 +34,11 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${textoNormal.variable} ${titulos.variable} ${mono.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Google Analytics con aviso de cookies: el ID se pone en public/analitica.js */}
+        <script src="/analitica.js" defer></script>
+      </body>
     </html>
   );
 }

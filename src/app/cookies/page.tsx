@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cookies · Sara Hidalgo Caro",
-  description: "Which cookies this portfolio uses and how to change your choice.",
+  title: "Privacy & cookies · Sara Hidalgo Caro",
+  description: "What the contact form does with your data, which cookies this portfolio uses and how to change your choice.",
   alternates: { canonical: "/cookies/" },
   robots: { index: false, follow: true },
 };
@@ -13,8 +13,21 @@ export const metadata: Metadata = {
 export default function Cookies() {
   return (
     <main className="legal wrap">
-      <span className="mono k">Cookies</span>
-      <h1>Cookies on this site</h1>
+      <span className="mono k">Privacy</span>
+      <h1>Privacy &amp; cookies</h1>
+      <h2 id="contact-form">Contact form</h2>
+      <p>
+        If you write to me through the form, I receive your name, email, company (if you add it) and message by email at
+        my personal inbox. I only use them to answer you, and I delete them when they&apos;re no longer needed. Nothing
+        is added to a mailing list or shared with anyone. The site is hosted by Hostinger (EU), which sends the email.
+      </p>
+      <p>
+        To stop spam, the form uses <b>Cloudflare Turnstile</b>, which checks you&apos;re a person without cookies for
+        advertising.{" "}
+        <a href="https://www.cloudflare.com/turnstile-privacy-policy/" rel="noopener">Turnstile privacy</a>. You can ask
+        me to see or delete your data at any time by email.
+      </p>
+      <h2>Cookies</h2>
       <p>
         Only if you click <b>Accept</b> in the notice, this site uses <b>Google Analytics</b> to count visits, see where
         they come from and which pages are viewed. If you decline, it doesn&apos;t load and no cookie is set.

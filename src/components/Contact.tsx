@@ -1,4 +1,5 @@
 import CopyEmail from "./CopyEmail";
+import ContactForm from "./ContactForm";
 
 const email = "sarahidalgocaro97@gmail.com";
 
@@ -17,6 +18,7 @@ export default function Contact() {
           </a>
           <CopyEmail email={email} />
         </div>
+        <ContactForm />
         <div className="ctas">
           <a className="btn primary" href="/cv/Sara-Hidalgo-Caro-CV.pdf" download>
             Download CV

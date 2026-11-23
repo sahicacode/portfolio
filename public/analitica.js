@@ -4,6 +4,17 @@
    - La elección se guarda en este navegador (portfolio-cookies = si | no).
    - Cualquier botón con data-cookies="abrir" vuelve a enseñar el aviso (está en /cookies/).
    Se usa en la portada (Next.js) y en /proyectos/. Las demos no lo llevan: son webs de prueba. */
+/* Cloudflare Web Analytics: no usa cookies, así que no necesita aviso y cuenta a todo el mundo.
+   Pon aquí el «token» que da Cloudflare (Web Analytics → Add a site). Vacío = sin Cloudflare. */
+(function () {
+  var CF_TOKEN = "";
+  if (!CF_TOKEN) return;
+  var s = document.createElement("script"); s.defer = true;
+  s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  s.setAttribute("data-cf-beacon", JSON.stringify({ token: CF_TOKEN }));
+  document.head.appendChild(s);
+})();
+
 (function () {
   var GA_ID = "G-3KSG0NE4XP";
   if (!GA_ID) return;

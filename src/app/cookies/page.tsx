@@ -27,6 +27,12 @@ export default function Cookies() {
         <a href="https://www.cloudflare.com/turnstile-privacy-policy/" rel="noopener">Turnstile privacy</a>. You can ask
         me to see or delete your data at any time by email.
       </p>
+      <h2>Visit counts</h2>
+      <p>
+        To know how many people visit, this site uses <b>Cloudflare Web Analytics</b>. It sets no cookies, stores nothing
+        in your browser and doesn&apos;t follow you across sites: it only gives me totals, without knowing who you are.{" "}
+        <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare privacy</a>.
+      </p>
       <h2>Cookies</h2>
       <p>
         Only if you click <b>Accept</b> in the notice, this site uses <b>Google Analytics</b> to count visits, see where

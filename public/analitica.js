@@ -7,7 +7,7 @@
 /* Cloudflare Web Analytics: no usa cookies, así que no necesita aviso y cuenta a todo el mundo.
    Pon aquí el «token» que da Cloudflare (Web Analytics → Add a site). Vacío = sin Cloudflare. */
 (function () {
-  var CF_TOKEN = "";
+  var CF_TOKEN = "a9818311d136499ab025514045c1de66";
   if (!CF_TOKEN) return;
   var s = document.createElement("script"); s.defer = true;
   s.src = "https://static.cloudflareinsights.com/beacon.min.js";

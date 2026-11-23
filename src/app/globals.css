@@ -1192,6 +1192,109 @@ section.s {
   border-color: var(--muted);
 }
 
+/* Formulario de contacto */
+.cform {
+  display: grid;
+  gap: 16px;
+  max-width: 640px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--card) 85%, transparent);
+}
+.cform-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.cform label {
+  display: grid;
+  gap: 6px;
+  font-size: var(--fs-small);
+  color: var(--fg);
+  font-weight: 500;
+}
+.cform label span {
+  color: var(--dim);
+  font-weight: 400;
+}
+.cform input:not([type="checkbox"]),
+.cform textarea {
+  width: 100%;
+  font: 400 var(--fs-body) var(--sans);
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--line2);
+  border-radius: 12px;
+  padding: 12px 14px;
+  min-height: 46px;
+}
+.cform textarea {
+  resize: vertical;
+}
+.cform input:focus-visible,
+.cform textarea:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+  border-color: var(--blue);
+}
+.cform .cform-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 400;
+  color: var(--muted);
+}
+.cform-check input {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: var(--blue);
+  flex: none;
+}
+.cform-check a {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.cform-ts {
+  min-height: 65px;
+  max-width: 100%;
+}
+.cform-send {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cform-send .btn {
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+}
+.cform-send .btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.contact p.cform-msg {
+  margin: 0;
+  font-size: var(--fs-small);
+  color: var(--muted);
+}
+.contact p.cform-msg.ok {
+  color: var(--ok);
+}
+.contact p.cform-msg.error {
+  color: #ff8a80;
+}
+.trampa {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* botones de contacto en el móvil: todos del mismo ancho */
 @media (max-width: 520px) {
   .mail {
@@ -1206,6 +1309,16 @@ section.s {
   }
   .contact .ctas .primary {
     grid-column: 1 / -1;
+  }
+  .cform {
+    padding: 18px;
+  }
+  .cform-row {
+    grid-template-columns: 1fr;
+  }
+  .cform-send .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -1327,6 +1440,13 @@ footer .wrap {
   font-family: var(--titulos);
   font-size: var(--fs-h2);
   line-height: 1.1;
+}
+.legal h2 {
+  font-family: var(--titulos);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-top: 14px;
+  scroll-margin-top: 90px;
 }
 .legal p {
   color: var(--muted);

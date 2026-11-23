@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image" },
+  // Search Console (propiedad portfolio.sahica.com)
+  verification: { google: "OexrrEa4WjFtwpPwyzokfwTrW47A6E4cBLd1EIZEcSk" },
 };
 
 export const viewport: Viewport = {

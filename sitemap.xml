@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://portfolio.sahica.com/</loc>
-<lastmod>2026-11-22T15:43:27.789Z</lastmod>
+<lastmod>2026-11-23T09:21:47.250Z</lastmod>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://portfolio.sahica.com/proyectos/</loc>
+<lastmod>2026-11-23T09:21:47.250Z</lastmod>
+<priority>0.7</priority>
 </url>
 </urlset>

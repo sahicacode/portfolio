@@ -5,7 +5,7 @@
    - Cualquier botón con data-cookies="abrir" vuelve a enseñar el aviso (está en /cookies/).
    Se usa en la portada (Next.js) y en /proyectos/. Las demos no lo llevan: son webs de prueba. */
 (function () {
-  var GA_ID = "";
+  var GA_ID = "G-3KSG0NE4XP";
   if (!GA_ID) return;
 
   var CLAVE = "portfolio-cookies";

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cookies · Sara Hidalgo",
+  title: "Cookies · Sara Hidalgo Caro",
   description: "Which cookies this portfolio uses and how to change your choice.",
   alternates: { canonical: "/cookies/" },
   robots: { index: false, follow: true },

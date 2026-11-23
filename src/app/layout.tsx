@@ -7,19 +7,19 @@ const titulos = Ubuntu({ variable: "--font-titulos", subsets: ["latin"], weight:
 const mono = Ubuntu_Mono({ variable: "--font-mono", subsets: ["latin"], weight: ["400", "700"] });
 
 const descripcion =
-  "Front-end developer from Seville. HTML, CSS, JavaScript, PHP and WordPress. Projects, experience and contact.";
+  "Sara Hidalgo Caro, front-end developer from Seville. HTML, CSS, JavaScript, PHP and WordPress. Projects, experience and contact.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio.sahica.com"),
-  title: "Sara Hidalgo · Front-End Developer",
+  title: "Sara Hidalgo Caro · Front-End Developer",
   description: descripcion,
   alternates: { canonical: "/" },
   icons: { icon: "/favicon.png" },
   openGraph: {
-    title: "Sara Hidalgo · Front-End Developer",
+    title: "Sara Hidalgo Caro · Front-End Developer",
     description: descripcion,
     url: "https://portfolio.sahica.com",
-    siteName: "Sara Hidalgo",
+    siteName: "Sara Hidalgo Caro",
     images: [{ url: "/og.jpg", width: 1200, height: 630 }],
     locale: "en_GB",
     type: "website",

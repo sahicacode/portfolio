@@ -16,6 +16,7 @@ const persona = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Sara Hidalgo Caro",
+  alternateName: "Sara Hidalgo",
   jobTitle: "Front-End Developer",
   url: "https://portfolio.sahica.com",
   address: { "@type": "PostalAddress", addressLocality: "Seville", addressCountry: "ES" },
